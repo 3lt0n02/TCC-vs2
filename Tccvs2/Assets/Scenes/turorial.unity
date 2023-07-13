@@ -7634,6 +7634,7 @@ GameObject:
   - component: {fileID: 1409835489}
   - component: {fileID: 1409835488}
   - component: {fileID: 1409835487}
+  - component: {fileID: 1409835491}
   m_Layer: 0
   m_Name: platafoma
   m_TagString: "Ch\xE3o"
@@ -7673,7 +7674,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -7755,6 +7756,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!251 &1409835491
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409835486}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 150
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1429220647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7919,7 +7939,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441813705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.28, y: 4.28, z: 0}
+  m_LocalPosition: {x: 99.4, y: 4.5, z: 0}
   m_LocalScale: {x: 0.5703744, y: 0.53430605, z: 0.685711}
   m_ConstrainProportionsScale: 0
   m_Children: []

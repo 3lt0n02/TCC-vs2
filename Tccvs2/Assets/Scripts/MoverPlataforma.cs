@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class MoverPlataforma : MonoBehaviour
 {
-    public GameObject plataforma; // Referência ao objeto da plataforma
-    public float velocidade = 5f; // Velocidade de movimento da plataforma
+    public GameObject plataforma;
+    public float velocidade = 5f; 
 
-    private bool subindo = false; // Flag para indicar se a plataforma está subindo
+    private bool subindo = false; 
 
     private void Update()
     {
         if (subindo)
         {
-            // Mover a plataforma para cima
             plataforma.transform.Translate(Vector3.up * velocidade * Time.deltaTime);
         }
     }
@@ -20,7 +19,7 @@ public class MoverPlataforma : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            subindo = true; // Ativar o movimento da plataforma quando colidir com o personagem
+            subindo = true;
         }
     }
 }
