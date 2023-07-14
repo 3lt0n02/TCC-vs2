@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 10168127}
   - component: {fileID: 10168128}
   - component: {fileID: 10168129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (17)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 214714842}
   - component: {fileID: 214714843}
   - component: {fileID: 214714844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (2)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 222601195}
   - component: {fileID: 222601197}
   - component: {fileID: 222601196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (43)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -1371,7 +1371,7 @@ GameObject:
   - component: {fileID: 294049544}
   - component: {fileID: 294049546}
   - component: {fileID: 294049545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (24)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -1482,7 +1482,6 @@ GameObject:
   - component: {fileID: 319904702}
   - component: {fileID: 319904705}
   - component: {fileID: 319904704}
-  - component: {fileID: 319904703}
   m_Layer: 0
   m_Name: "But\xE3o (2)"
   m_TagString: Untagged
@@ -1505,20 +1504,6 @@ Transform:
   m_Father: {fileID: 1027556618}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &319904703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319904701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 193206c652d65be44852c86b867031c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plataforma: {fileID: 1409835486}
-  velocidade: 2
 --- !u!61 &319904704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1860,7 +1845,7 @@ GameObject:
   - component: {fileID: 416348936}
   - component: {fileID: 416348938}
   - component: {fileID: 416348937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (28)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -2042,7 +2027,7 @@ GameObject:
   - component: {fileID: 428213773}
   - component: {fileID: 428213774}
   - component: {fileID: 428213775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (30)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -2565,7 +2550,7 @@ GameObject:
   - component: {fileID: 524859491}
   - component: {fileID: 524859493}
   - component: {fileID: 524859492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (16)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -2760,7 +2745,7 @@ GameObject:
   - component: {fileID: 571847264}
   - component: {fileID: 571847265}
   - component: {fileID: 571847266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (38)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3040,7 +3025,7 @@ GameObject:
   - component: {fileID: 618692742}
   - component: {fileID: 618692744}
   - component: {fileID: 618692743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (44)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3262,7 +3247,7 @@ GameObject:
   - component: {fileID: 638229448}
   - component: {fileID: 638229450}
   - component: {fileID: 638229449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (33)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3373,7 +3358,7 @@ GameObject:
   - component: {fileID: 660197903}
   - component: {fileID: 660197904}
   - component: {fileID: 660197905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (15)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3484,7 +3469,7 @@ GameObject:
   - component: {fileID: 668980675}
   - component: {fileID: 668980674}
   - component: {fileID: 668980676}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Primeiro Ch\xE3o"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3637,7 +3622,7 @@ GameObject:
   - component: {fileID: 715285848}
   - component: {fileID: 715285849}
   - component: {fileID: 715285850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (8)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3748,7 +3733,7 @@ GameObject:
   - component: {fileID: 716811707}
   - component: {fileID: 716811708}
   - component: {fileID: 716811709}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (9)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -3848,6 +3833,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &737514200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737514202}
+  - component: {fileID: 737514201}
+  - component: {fileID: 737514203}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &737514201
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737514200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.051651, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.103302, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &737514202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737514200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 104.319, y: 2.837, z: 0.031121453}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &737514203
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737514200}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &771713172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,7 +3924,7 @@ GameObject:
   - component: {fileID: 771713173}
   - component: {fileID: 771713174}
   - component: {fileID: 771713175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (39)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -4054,7 +4119,7 @@ GameObject:
   - component: {fileID: 809139326}
   - component: {fileID: 809139327}
   - component: {fileID: 809139328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (4)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -4165,7 +4230,7 @@ GameObject:
   - component: {fileID: 910195108}
   - component: {fileID: 910195109}
   - component: {fileID: 910195110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (34)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -4360,7 +4425,7 @@ GameObject:
   - component: {fileID: 949265457}
   - component: {fileID: 949265459}
   - component: {fileID: 949265458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (26)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -4664,7 +4729,7 @@ GameObject:
   - component: {fileID: 961061792}
   - component: {fileID: 961061793}
   - component: {fileID: 961061794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (35)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -5363,7 +5428,7 @@ GameObject:
   - component: {fileID: 1050514544}
   - component: {fileID: 1050514545}
   - component: {fileID: 1050514546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (13)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -5474,7 +5539,7 @@ GameObject:
   - component: {fileID: 1081031196}
   - component: {fileID: 1081031197}
   - component: {fileID: 1081031198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (7)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -5585,7 +5650,7 @@ GameObject:
   - component: {fileID: 1082124669}
   - component: {fileID: 1082124670}
   - component: {fileID: 1082124671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (40)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -5975,7 +6040,7 @@ GameObject:
   - component: {fileID: 1153724966}
   - component: {fileID: 1153724968}
   - component: {fileID: 1153724967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (45)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -6086,7 +6151,7 @@ GameObject:
   - component: {fileID: 1180817783}
   - component: {fileID: 1180817785}
   - component: {fileID: 1180817784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (12)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -6644,7 +6709,7 @@ GameObject:
   - component: {fileID: 1269205202}
   - component: {fileID: 1269205204}
   - component: {fileID: 1269205203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (14)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -6910,7 +6975,7 @@ GameObject:
   - component: {fileID: 1301809746}
   - component: {fileID: 1301809748}
   - component: {fileID: 1301809747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (19)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -7021,7 +7086,7 @@ GameObject:
   - component: {fileID: 1336365924}
   - component: {fileID: 1336365926}
   - component: {fileID: 1336365925}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (20)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -7132,7 +7197,7 @@ GameObject:
   - component: {fileID: 1345256008}
   - component: {fileID: 1345256009}
   - component: {fileID: 1345256010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (37)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -7243,7 +7308,7 @@ GameObject:
   - component: {fileID: 1352071840}
   - component: {fileID: 1352071841}
   - component: {fileID: 1352071842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (32)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -7438,7 +7503,7 @@ GameObject:
   - component: {fileID: 1353748820}
   - component: {fileID: 1353748822}
   - component: {fileID: 1353748821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (41)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -7634,8 +7699,8 @@ GameObject:
   - component: {fileID: 1409835489}
   - component: {fileID: 1409835488}
   - component: {fileID: 1409835487}
-  - component: {fileID: 1409835491}
-  m_Layer: 0
+  - component: {fileID: 1409835492}
+  m_Layer: 3
   m_Name: platafoma
   m_TagString: "Ch\xE3o"
   m_Icon: {fileID: 0}
@@ -7674,7 +7739,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -7756,25 +7821,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!251 &1409835491
-PlatformEffector2D:
+--- !u!114 &1409835492
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409835486}
   m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072d23afa0e4a4c4ea72445b7d087906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detector: {fileID: 1420417812}
+  oQueEPlataforma:
     serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 150
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
+    m_Bits: 8
+--- !u!1 &1420417811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420417812}
+  m_Layer: 0
+  m_Name: detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420417812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420417811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: -0.96, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1441813707}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1429220647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7939,10 +8032,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441813705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.4, y: 4.5, z: 0}
+  m_LocalPosition: {x: 99.386, y: 4.309, z: 0}
   m_LocalScale: {x: 0.5703744, y: 0.53430605, z: 0.685711}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1420417812}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8092,7 +8186,7 @@ GameObject:
   - component: {fileID: 1480440951}
   - component: {fileID: 1480440952}
   - component: {fileID: 1480440953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (25)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -8540,7 +8634,7 @@ GameObject:
   - component: {fileID: 1575475457}
   - component: {fileID: 1575475458}
   - component: {fileID: 1575475459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (22)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -8651,7 +8745,7 @@ GameObject:
   - component: {fileID: 1713590769}
   - component: {fileID: 1713590770}
   - component: {fileID: 1713590771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (5)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -8762,7 +8856,7 @@ GameObject:
   - component: {fileID: 1754009799}
   - component: {fileID: 1754009800}
   - component: {fileID: 1754009801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (21)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -8873,7 +8967,7 @@ GameObject:
   - component: {fileID: 1762838119}
   - component: {fileID: 1762838120}
   - component: {fileID: 1762838121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (3)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -8984,7 +9078,7 @@ GameObject:
   - component: {fileID: 1778500107}
   - component: {fileID: 1778500109}
   - component: {fileID: 1778500108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (18)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -9095,7 +9189,7 @@ GameObject:
   - component: {fileID: 1794539838}
   - component: {fileID: 1794539840}
   - component: {fileID: 1794539839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (42)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -9361,7 +9455,7 @@ GameObject:
   - component: {fileID: 1851985781}
   - component: {fileID: 1851985782}
   - component: {fileID: 1851985783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (27)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -9543,7 +9637,7 @@ GameObject:
   - component: {fileID: 1873136952}
   - component: {fileID: 1873136953}
   - component: {fileID: 1873136954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (36)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -9738,7 +9832,7 @@ GameObject:
   - component: {fileID: 1889285474}
   - component: {fileID: 1889285475}
   - component: {fileID: 1889285476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (1)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -9933,7 +10027,7 @@ GameObject:
   - component: {fileID: 1970407733}
   - component: {fileID: 1970407734}
   - component: {fileID: 1970407735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (6)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -10212,7 +10306,7 @@ GameObject:
   - component: {fileID: 2027249700}
   - component: {fileID: 2027249701}
   - component: {fileID: 2027249702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (10)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
@@ -10409,7 +10503,7 @@ GameObject:
   - component: {fileID: 2083323414}
   - component: {fileID: 2083323415}
   - component: {fileID: 2083323416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o (23)"
   m_TagString: Grond
   m_Icon: {fileID: 0}
