@@ -7833,10 +7833,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 072d23afa0e4a4c4ea72445b7d087906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidade: 25.7
   detector: {fileID: 1420417812}
   oQueEPlataforma:
     serializedVersion: 2
     m_Bits: 8
+  vaisubir: 0
 --- !u!1 &1420417811
 GameObject:
   m_ObjectHideFlags: 0
