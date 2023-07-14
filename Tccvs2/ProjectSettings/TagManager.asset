@@ -7,6 +7,7 @@ TagManager:
   - "Ch\xE3o"
   - Grond
   - Botao
+  - plataforma
   layers:
   - Default
   - TransparentFX
