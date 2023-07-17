@@ -9,7 +9,7 @@ public class AtaqueDoPersonagem : MonoBehaviour
     public float raioAtaque;
     public LayerMask layerinimigo;
     public float timeNextataque;
-    
+
     void Start()
     {
         
@@ -19,5 +19,9 @@ public class AtaqueDoPersonagem : MonoBehaviour
     void Update()
     {
         
+    }
+    void Flip()
+    {
+        ataqueCheck.localPosition = new Vector2(-ataqueCheck.localPosition.x, ataqueCheck.localPosition.y);
     }
 }

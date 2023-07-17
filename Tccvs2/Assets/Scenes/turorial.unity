@@ -3973,7 +3973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 592258643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Echao
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -10463,7 +10463,7 @@ GameObject:
   - component: {fileID: 1371651495}
   - component: {fileID: 1371651494}
   - component: {fileID: 1371651493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Inimigo (3)
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
@@ -11366,11 +11366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d589734656ec17f40bccd4e4804f7b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ataqueCheck: {fileID: 0}
-  raioAtaque: 0
+  ataqueCheck: {fileID: 1680275989}
+  raioAtaque: 0.5
   layerinimigo:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   timeNextataque: 0
 --- !u!1 &1454565637
 GameObject:
