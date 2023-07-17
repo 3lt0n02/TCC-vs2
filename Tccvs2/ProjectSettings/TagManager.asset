@@ -8,6 +8,8 @@ TagManager:
   - Grond
   - Botao
   - plataforma
+  - Parar
+  - ObjetoPai
   layers:
   - Default
   - TransparentFX

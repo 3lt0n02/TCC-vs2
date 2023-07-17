@@ -40,6 +40,12 @@ public class ControleDoPersonagem : MonoBehaviour
             {
                 estaNoChao = true;
             }
+            
+        if (collision.gameObject.CompareTag("ObjetoPai"))
+            {
+                transform.SetParent(collision.transform);
+            }
     }
+
 }
 
