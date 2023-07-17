@@ -11,6 +11,8 @@ TagManager:
   - Parar
   - ObjetoPai
   - Inimigo
+  - Movel
+  - Gatilho
   layers:
   - Default
   - TransparentFX

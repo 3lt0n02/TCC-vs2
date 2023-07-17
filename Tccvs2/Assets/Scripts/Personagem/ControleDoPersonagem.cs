@@ -48,7 +48,7 @@ public class ControleDoPersonagem : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // condição para pular
+        // condisao para pular
         if (collision.gameObject.CompareTag("Grond"))
             {
                 estaNoChao = true;
@@ -65,8 +65,8 @@ public class ControleDoPersonagem : MonoBehaviour
                 vida -= 10.0f;
                 barra.alterarVida(vida);
             }
-
     }
+    
     void Morte()
     {
         if(vida <= 0)
