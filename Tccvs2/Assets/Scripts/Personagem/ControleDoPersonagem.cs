@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class ControleDoPersonagem : MonoBehaviour
 {
+    [Header ("variaveis de Movimento")]
     public float speed;
     public float jumpForce;
-    // sistema de vida
+    
+    [Header ("variaveis do sitema de Vida")]
     public BarraDeVida barra;
     public float vida;
     

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BarraDeVida : MonoBehaviour
 {
+    [Header ("variaveis de controle da barra de vida")]
     public Slider slider;
     
 

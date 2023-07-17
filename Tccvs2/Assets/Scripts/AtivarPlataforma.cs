@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class AtivarPlataforma : MonoBehaviour
 {
+    [Header ("variaveis de controle de plataformas")]
     public GameObject plataforma;
 
     private bool estaPressionado;

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class InimigoTerrestre : MonoBehaviour
 {
+    [Header ("variaveis de movimento")]
     public float velocidade;
     public float distancia;
 
     private bool edireita = true;
-    public Transform estaNoChao;
+    private Transform estaNoChao;
 
     void Start()
     {

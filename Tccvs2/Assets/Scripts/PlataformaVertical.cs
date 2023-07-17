@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlataformaVertical : MonoBehaviour
 {
+    
     private Rigidbody2D rg;
     private float velocidade = 25.7f;
     private bool estaNaPlataforma = false;
+    [Header ("variaveis de condiçoes")]
     public bool vaiSubir;
     
 
