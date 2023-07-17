@@ -8,10 +8,12 @@ public class PlataformaVertical : MonoBehaviour
     private float velocidade = 25.7f;
     private bool estaNaPlataforma = false;
     public bool vaiSubir;
+    
+
 
     void Start()
     {
-       rg = GetComponent<Rigidbody2D>(); 
+        rg = GetComponent<Rigidbody2D>(); 
     }
 
     void Update()
