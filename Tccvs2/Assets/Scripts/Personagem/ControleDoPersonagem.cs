@@ -11,7 +11,9 @@ public class ControleDoPersonagem : MonoBehaviour
     
     [Header ("variaveis do sitema de Vida")]
     public BarraDeVida barra;
+    //public Tronco tronco;
     public float vida;
+    public GameObject bolaVerde;
     
     
    
@@ -66,6 +68,12 @@ public class ControleDoPersonagem : MonoBehaviour
             {
                 vida -= 10.0f;
                 barra.alterarVida(vida);
+            }
+        if (collision.gameObject.CompareTag("Gatilho"))
+            {    
+                Tronco script = bolaVerde.GetComponent<Tronco>();
+                //Rigidbody2D rg = bolaVerde.GetComponent<Rigidbody2D>();
+                script.move();
             }
     }
     
