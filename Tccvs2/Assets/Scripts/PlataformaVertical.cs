@@ -8,6 +8,7 @@ public class PlataformaVertical : MonoBehaviour
     private Rigidbody2D rg;
     private float velocidade = 25.7f;
     private bool estaNaPlataforma = false;
+    
     [Header ("variaveis de condiçoes")]
     public bool vaiSubir;
     
@@ -36,7 +37,7 @@ public class PlataformaVertical : MonoBehaviour
         {
             velocidade = 1f;
             rg.bodyType = RigidbodyType2D.Dynamic;
-            rg.velocity = Vector2.down * velocidade;
+            transform.Translate(Vector2.down * velocidade * Time.deltaTime);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -44,7 +45,6 @@ public class PlataformaVertical : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             estaNaPlataforma = true;
-
         }
     
     }

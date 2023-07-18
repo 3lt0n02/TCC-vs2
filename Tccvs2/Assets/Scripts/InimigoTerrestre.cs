@@ -8,8 +8,8 @@ public class InimigoTerrestre : MonoBehaviour
     public float velocidade;
     public float distancia;
 
-    private bool edireita = true;
-    private Transform estaNoChao;
+    bool edireita = true;
+    public Transform estaNoChao;
 
     void Start()
     {
