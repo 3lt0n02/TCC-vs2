@@ -8,6 +8,10 @@ public class ControleDoPersonagem : MonoBehaviour
     [Header ("variaveis de Movimento")]
     public float speed;
     public float jumpForce;
+    private int puloExtra = 1;
+    public bool estaNoChao;
+    public Transform detectaChao;
+    public LayerMask oQueEchao;
     
     [Header ("variaveis do sitema de Vida")]
     public BarraDeVida barra;
@@ -19,7 +23,7 @@ public class ControleDoPersonagem : MonoBehaviour
    
 
     private Rigidbody2D rig;
-    private bool estaNoChao;
+    
 
     void Start()
     {
@@ -30,6 +34,7 @@ public class ControleDoPersonagem : MonoBehaviour
 
     void Update()
     {
+       estaNoChao = Physics2D.OverlapCircle(detectaChao.position, 0.1f, oQueEchao);
        move(); 
        Jump();
        Morte();
@@ -44,20 +49,22 @@ public class ControleDoPersonagem : MonoBehaviour
     void Jump()
     {
         // execução do pulo
-        if (estaNoChao && Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && estaNoChao == true)
         {
             rig.velocity = new Vector2(rig.velocity.x, jumpForce);
-            estaNoChao = false;
+        }
+        if (Input.GetButtonDown("Jump") && estaNoChao == false && puloExtra > 0)
+        {
+            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+            puloExtra--;
+        }
+        if(estaNoChao)
+        {
+            puloExtra = puloExtra + 1;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
-    {
-        // condisao para pular
-        if (collision.gameObject.CompareTag("Grond"))
-            {
-                estaNoChao = true;
-            }
-            
+    {       
         // grudando na plataforma
         if (collision.gameObject.CompareTag("ObjetoPai"))
             {
