@@ -7,21 +7,18 @@ public class ControleDoPersonagem : MonoBehaviour
 {
     [Header ("variaveis de Movimento")]
     public float speed;
-    public float jumpForce;
+    public float forsaDoPulo;
+    // variaveis de controle do pulo
+    public LayerMask chao;
+    public Transform oQueEhChao;
+    private bool taNochao;
     private int puloExtra = 1;
-    public bool estaNoChao;
-    public Transform detectaChao;
-    public LayerMask oQueEchao;
-    
+
     [Header ("variaveis do sitema de Vida")]
     public BarraDeVida barra;
-    //public Tronco tronco;
     public float vida;
-    public GameObject bolaVerde;
     
-    
-   
-
+    // variavel do rigidbody2D do personagem
     private Rigidbody2D rig;
     
 
@@ -34,9 +31,23 @@ public class ControleDoPersonagem : MonoBehaviour
 
     void Update()
     {
-       estaNoChao = Physics2D.OverlapCircle(detectaChao.position, 0.1f, oQueEchao);
+        taNochao = Physics2D.OverlapCircle(oQueEhChao.position, 0.2f, chao);
+        
+        if(Input.GetButtonDown("Jump") && taNochao == true)
+        {
+            rig.velocity = Vector2.up * forsaDoPulo;
+        }
+        if(Input.GetButtonDown("Jump") && taNochao == false && puloExtra > 0)
+        {
+            rig.velocity = Vector2.up * forsaDoPulo;
+            puloExtra--;
+        }
+        if(taNochao)
+        {
+            puloExtra = 1;
+        }
+
        move(); 
-       Jump();
        Morte();
     }
 
@@ -45,23 +56,6 @@ public class ControleDoPersonagem : MonoBehaviour
         //movimentação
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * speed;
-    }
-    void Jump()
-    {
-        // execução do pulo
-        if (Input.GetButtonDown("Jump") && estaNoChao == true)
-        {
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
-        }
-        if (Input.GetButtonDown("Jump") && estaNoChao == false && puloExtra > 0)
-        {
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
-            puloExtra--;
-        }
-        if(estaNoChao)
-        {
-            puloExtra = puloExtra + 1;
-        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {       
@@ -76,14 +70,7 @@ public class ControleDoPersonagem : MonoBehaviour
                 vida -= 10.0f;
                 barra.alterarVida(vida);
             }
-        if (collision.gameObject.CompareTag("Gatilho"))
-            {    
-                Tronco script = bolaVerde.GetComponent<Tronco>();
-                //Rigidbody2D rg = bolaVerde.GetComponent<Rigidbody2D>();
-                script.move();
-            }
     }
-    
     void Morte()
     {
         if(vida <= 0)
