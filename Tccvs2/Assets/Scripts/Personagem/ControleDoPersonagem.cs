@@ -6,7 +6,6 @@ using UnityEngine;
 public class ControleDoPersonagem : MonoBehaviour
 {
     [Header ("variaveis de Movimento")]
-    public float speed;
     public float forsaDoPulo;
     // variaveis de controle do pulo
     public LayerMask chao;
@@ -31,7 +30,7 @@ public class ControleDoPersonagem : MonoBehaviour
 
     void Update()
     {
-        taNochao = Physics2D.OverlapCircle(oQueEhChao.position, 0.2f, chao);
+        taNochao = Physics2D.OverlapCircle(oQueEhChao.position, 0.1f, chao);
         
         if(Input.GetButtonDown("Jump") && taNochao == true)
         {
@@ -46,16 +45,7 @@ public class ControleDoPersonagem : MonoBehaviour
         {
             puloExtra = 1;
         }
-
-       move(); 
        Morte();
-    }
-
-    void move()
-    {
-        //movimentação
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += movement * Time.deltaTime * speed;
     }
     void OnCollisionEnter2D(Collision2D collision)
     {       
