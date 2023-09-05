@@ -17,10 +17,10 @@ public class InimigoTerrestre : MonoBehaviour
     }
     void Update()
     {
-        transform.Translate(Vector2.right* velocidade * Time.deltaTime);
-        RaycastHit2D Chao = Physics2D.Raycast(estaNoChao.position, Vector2.down, distancia);
+        transform.Translate(Vector2.right * velocidade * Time.deltaTime);
+        RaycastHit2D Chão = Physics2D.Raycast(estaNoChao.position, Vector2.down, distancia);
 
-        if (Chao.collider == false)
+        if (Chão.collider == false)
         {
             if(edireita == true)
             {
