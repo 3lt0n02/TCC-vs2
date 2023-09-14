@@ -27,7 +27,7 @@ TagManager:
   - 
   - Ground
   - Elementos Da Floresta
-  - 
+  - Player
   - 
   - 
   - 
@@ -50,6 +50,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Player
+    uniqueID: 38334163
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2149215537
     locked: 0

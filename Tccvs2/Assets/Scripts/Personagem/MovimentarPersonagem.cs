@@ -1,14 +1,20 @@
 using System;
+using Cinemachine;
 using UnityEngine;
 
 public class MovimentarPersonagem : MonoBehaviour
 {
     [Header("Variaves de Movemento ")]
-    public float velocidade = 5f; 
+    public float velocidade; 
     private Rigidbody2D rb2D;
+    private float diresao;
+    
+    [Header("Variaves do Pulo")]
     private int puloExtra = 1;
     public float forsaDoPulo;
-    private bool taNoChao;
+    public Transform detecarChao;
+    public LayerMask oQueeChao;
+    public bool taNoChao;
 
     [Header("Variaves de Ataque")] 
     public Transform ataqueChek;
@@ -31,16 +37,13 @@ public class MovimentarPersonagem : MonoBehaviour
         Pulo();
         flip();
         playerAtaque();
+        taNoChao = Physics2D.OverlapCircle(detecarChao.position, 0.2f, oQueeChao );
     }
 
     void Movimento()
     {
-        float movimentoHorizontal = Input.GetAxis("Horizontal");
-
-        Vector2 direcaoMovimento = new Vector2(movimentoHorizontal, 0f);
-        Vector2 velocidadeMovimento = direcaoMovimento * velocidade;
-
-        rb2D.velocity = velocidadeMovimento;
+        diresao = Input.GetAxis("Horizontal");
+        rb2D.velocity = new Vector2(diresao * velocidade, rb2D.velocity.y);
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
@@ -52,16 +55,14 @@ public class MovimentarPersonagem : MonoBehaviour
     }
     void Pulo()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && taNoChao)
+        if (Input.GetButtonDown("Jump") && taNoChao == true)
         {
-            rb2D.velocity = new Vector2(rb2D.velocity.x, forsaDoPulo);
-            taNoChao = false;
+            rb2D.velocity = Vector2.up * forsaDoPulo;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && taNoChao == false && puloExtra == 1)
+        if (Input.GetButtonDown("Jump") && taNoChao == false && puloExtra > 0)
         {
-            rb2D.velocity = new Vector2(rb2D.velocity.x, forsaDoPulo);
-            taNoChao = false;
+            rb2D.velocity = Vector2.up * forsaDoPulo;
             puloExtra--;
         }
 
