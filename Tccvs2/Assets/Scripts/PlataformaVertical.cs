@@ -9,7 +9,7 @@ public class PlataformaVertical : MonoBehaviour
     private float velocidade = 25.7f;
     private bool estaNaPlataforma = false;
     
-    [Header ("variaveis de condiçoes")]
+    [Header ("variaveis de condiçoes se sober ou não")]
     public bool vaiSubir;
     
 

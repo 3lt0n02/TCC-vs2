@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlataformaSubir : MonoBehaviour
 {
+    [Header ("controle de movimento das plataformas")]
     private Rigidbody2D rg;
     private bool estaNaPlataforma;
     public float velocidade;
