@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1420,9 +1420,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Teste_Camada 1_79: -215314716
-      Teste_Camada 1_48: -1967225231
-      Teste_Camada 1_81: 1165085854
+      Teste_Camada 1_123: 56481955
       Teste_Camada 1_55: 1670484833
+      Teste_Camada 1_82: 1339109803
       Teste_Camada 1_113: -1158543103
       Teste_Camada 1_64: -1752590732
       Teste_Camada 1_80: 1692889319
@@ -1542,13 +1542,13 @@ TextureImporter:
       Teste_Camada 1_107: 235723368
       Teste_Camada 1_16: 1783186498
       Teste_Camada 1_51: 1498044058
-      Teste_Camada 1_122: -1042290017
-      Teste_Camada 1_123: 56481955
       Teste_Camada 1_44: -1053032346
-      Teste_Camada 1_114: 1067229221
       Teste_Camada 1_95: 1503022961
+      Teste_Camada 1_122: -1042290017
+      Teste_Camada 1_114: 1067229221
+      Teste_Camada 1_81: 1165085854
       Teste_Camada 1_124: 220890322
-      Teste_Camada 1_82: 1339109803
+      Teste_Camada 1_48: -1967225231
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
