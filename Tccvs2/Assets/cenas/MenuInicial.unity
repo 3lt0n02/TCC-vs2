@@ -398,7 +398,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 67202556045e2ec439dd3213c11e8ee1, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
         m_MethodName: 
         m_Mode: 1
@@ -407,7 +407,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: play
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &493381694
@@ -457,9 +457,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 493381691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67202556045e2ec439dd3213c11e8ee1, type: 3}
+  m_Script: {fileID: 11500000, guid: f89d0757ebcf85741b2513d7f07c2d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BotaoPLay: {fileID: 493381693}
 --- !u!1 &717798022
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +474,7 @@ GameObject:
   - component: {fileID: 717798024}
   - component: {fileID: 717798023}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Interface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
