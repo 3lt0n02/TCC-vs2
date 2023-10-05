@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/turorial.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: "Assets/cenas/Inicializa\xE7\xE3o.unity"
+    guid: 2e3a804523b0f9240956d644d2096da5
+  - enabled: 1
+    path: Assets/cenas/MenuInicial.unity
+    guid: f2bef3e9e4422794a845bd00ed4b85ee
+  - enabled: 1
+    path: Assets/cenas/Interface.unity
+    guid: ae82e00e65feede458ba82e1a38a8524
+  - enabled: 1
+    path: Assets/cenas/Tutorial.unity
+    guid: 628f305fa6fbb6041bfb1701bea30d25
   m_configObjects: {}
