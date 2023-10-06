@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -501,8 +501,8 @@ TextureImporter:
       Elementos_Da_Florestas_12: -791210650
       Elementos_Da_Florestas_18: -1515473921
       Elementos_Da_Florestas_19: 1062595836
-      Elementos_Da_Florestas_24: -875665865
       Elementos_Da_Florestas_23: -820898379
+      Elementos_Da_Florestas_24: -875665865
       Elementos_Da_Florestas_29: 60398719
   spritePackingTag: 
   pSDRemoveMatte: 0

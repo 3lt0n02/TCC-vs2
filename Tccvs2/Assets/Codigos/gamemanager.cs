@@ -6,17 +6,39 @@ using UnityEngine;
 
 public class gamemanager : MonoBehaviour
 {
-    public static gamemanager intance;
+    private static gamemanager _instance;
 
+    public static gamemanager instace
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<gamemanager>();
+                if (_instance == null)
+                {
+                    GameObject gamemanager = Instantiate (Resources.Load<GameObject>("gamemanager"));
+                    _instance = gamemanager.GetComponent<gamemanager>();
+                }
+
+            }
+
+            return _instance;
+        }
+    }
+    void Awake()
+    {
+       DontDestroyOnLoad(this);
+    }
+   
     void Start()
     {
         SceneManager.LoadScene("MenuInicial");
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        DarPlayNoJogo();
     }
 
     public void DarPlayNoJogo()
@@ -25,16 +47,5 @@ public class gamemanager : MonoBehaviour
         SceneManager.LoadScene("Tutorial", LoadSceneMode.Additive);
     }
 
-    private void Awake()
-    {
-        if (intance == null)
-        {
-            intance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 }

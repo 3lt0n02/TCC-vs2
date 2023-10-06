@@ -12,7 +12,7 @@ public class ControleDoPersonagem : MonoBehaviour
     // variavel do rigidbody2D do personagem
     void Start()
     {
-        barra.ColocarVidaMaxima(vida);
+        //barra.ColocarVidaMaxima(vida);
     }
 
     void Update()

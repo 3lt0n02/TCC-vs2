@@ -26,6 +26,6 @@ public class Botoes : MonoBehaviour
 
     private void BotaoPlayClicado()
     {
-        Debug.Log("Funcionando");
+        gamemanager.instace.DarPlayNoJogo();
     }
 }
