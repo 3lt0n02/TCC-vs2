@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 489453358602989048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.8, y: -31.7, z: 0}
-  m_LocalScale: {x: 0.5703744, y: 0.53430605, z: 0.685711}
+  m_LocalScale: {x: 1.1349881, y: 1.0632156, z: 1.3644964}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 489453359388001060}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 10
-  forsaDoPulo: 12
+  forsaDoPulo: 16
   detecarChao: {fileID: 489453358898212253}
   oQueeChao:
     serializedVersion: 2
@@ -219,7 +219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489453358898212250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -0.975, z: 0}
+  m_LocalPosition: {x: -0.04, y: -1.215, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

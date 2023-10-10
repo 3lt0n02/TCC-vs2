@@ -1,30 +1,35 @@
 using UnityEngine;
 
-public class AtivarPlataforma : MonoBehaviour
+namespace Codigos.Cenario.Mecanicas_Plataformas
 {
-    [Header ("variaveis de controle de plataformas")]
-    public GameObject plataforma;
-
-    private bool estaPressionado;
-
-    void Start()
+    public class AtivarPlataforma : MonoBehaviour
     {
-        plataforma.SetActive(false);
-    }
+        [Header ("variaveis de controle de plataformas")]
+        public GameObject plataforma;
 
-    void Update()
-    {
-        if (estaPressionado)
+        private bool _estaPressionado;
+
+        void Start()
         {
-            plataforma.SetActive(true);
+            plataforma.SetActive(false);
         }
-    }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        void Update()
         {
-            estaPressionado = true;
+            if (_estaPressionado)
+            {
+                plataforma.SetActive(true);
+            
+            }
+        }
+
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                _estaPressionado = true;
+          
+            }
         }
     }
 }

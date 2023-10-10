@@ -16,6 +16,7 @@ TagManager:
   - Stop
   - Cura
   - Elementos Da floresta
+  - Plataforma
   layers:
   - Default
   - TransparentFX
