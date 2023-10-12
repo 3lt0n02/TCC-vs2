@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{47046bcf-a1f2-7fd7-2ef0-6ce71764eee7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimingRig", "AimingRig.csproj", "{efed99bd-ad3b-3bfb-837d-8ddbe8a18dd4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47046bcf-a1f2-7fd7-2ef0-6ce71764eee7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47046bcf-a1f2-7fd7-2ef0-6ce71764eee7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{efed99bd-ad3b-3bfb-837d-8ddbe8a18dd4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{efed99bd-ad3b-3bfb-837d-8ddbe8a18dd4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
