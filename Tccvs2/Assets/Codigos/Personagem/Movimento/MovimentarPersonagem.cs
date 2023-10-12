@@ -8,6 +8,8 @@ public class MovimentarPersonagem : MonoBehaviour
     public float velocidade; 
     private Rigidbody2D rb2D;
     private float diresao;
+    private Vector3 _olhaDireta;
+    private Vector3 _olhaEsquerda;
     
     [Header("Variaves do Pulo")]
     private int puloExtra = 1;
@@ -28,6 +30,10 @@ public class MovimentarPersonagem : MonoBehaviour
 
     private void Start()
     {
+        _olhaDireta = transform.localScale;
+        _olhaEsquerda = transform.localScale;
+        _olhaEsquerda.x = _olhaEsquerda.x * -1;
+        
         rb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -44,6 +50,16 @@ public class MovimentarPersonagem : MonoBehaviour
     {
         diresao = Input.GetAxis("Horizontal");
         rb2D.velocity = new Vector2(diresao * velocidade, rb2D.velocity.y);
+
+        if (diresao > 0)
+        {
+            transform.localScale = _olhaDireta;
+        }
+
+        if (diresao < 0)
+        {
+            transform.localScale = _olhaEsquerda;
+        }
     }
     
     private void OnCollisionEnter2D(Collision2D collision)

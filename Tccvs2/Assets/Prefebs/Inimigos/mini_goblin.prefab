@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4175478282648872620}
   m_Layer: 6
   m_Name: mini_goblin
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,8 +32,7 @@ Transform:
   m_LocalPosition: {x: -11.96, y: -36.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4175478283519612110}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 1
-  distancia: 2
-  estaNoChao: {fileID: 4175478283519612110}
+  pontoA: {fileID: 2566046700053529928, guid: dc5711c4868204d48812fa921e2457bf, type: 3}
+  pontoB: {fileID: 3071181289533344315, guid: 3e0bd0cc6085aee49905443df1ed0a7c, type: 3}
 --- !u!114 &4175478282648872620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,34 +162,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &4175478283519612111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4175478283519612110}
-  m_Layer: 6
-  m_Name: "Detector De Ch\xE3o"
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4175478283519612110
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4175478283519612111}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.549, y: -0.592, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4175478282648872621}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

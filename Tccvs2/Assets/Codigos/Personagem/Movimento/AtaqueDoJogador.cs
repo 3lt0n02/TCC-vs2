@@ -19,7 +19,7 @@ public class AtaqueDoJogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        atacando = Input.GetButtonDown("Fire1");
+        atacando = Input.GetKeyDown("w");
         if (atacando == true)
         {
             AtaqueBasico();

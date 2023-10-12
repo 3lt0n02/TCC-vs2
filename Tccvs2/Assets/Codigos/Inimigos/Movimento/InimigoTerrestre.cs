@@ -6,33 +6,45 @@ public class InimigoTerrestre : MonoBehaviour
 {
     [Header ("variaveis de movimento")]
     public float velocidade;
-    public float distancia;
 
-    bool edireita = true;
-    public Transform estaNoChao;
+    private bool moverParaEsquerda = true;
+    
+
+    private Vector3 _olharDireita;
+    private Vector3 _olharEsquerda;
+    
+    public Transform pontoA;
+    public Transform pontoB;
 
     void Start()
     {
-        
+        _olharDireita = transform.localScale;
+        _olharEsquerda = transform.localScale;
+        _olharEsquerda.x = _olharEsquerda.x * -1;
+
     }
     void Update()
     {
-        transform.Translate(Vector2.right * velocidade * Time.deltaTime);
-        RaycastHit2D Chão = Physics2D.Raycast(estaNoChao.position, Vector2.down, distancia);
-
-        if (Chão.collider == false)
+        if (transform.position.x > pontoA.position.x)
         {
-            if(edireita == true)
-            {
-                transform.eulerAngles = new Vector2(0, 0);
-                edireita = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector2(0, 180);
-                edireita = true;
-
-            }
+            moverParaEsquerda = true;
         }
+
+        if (transform.position.x < pontoB.position.x)
+        {
+            moverParaEsquerda = false;
+        }
+
+        if (moverParaEsquerda)
+        {
+            transform.position = new Vector2(transform.position.x - velocidade * Time.deltaTime, transform.position.y);
+            transform.localScale = _olharDireita;
+        }
+        else
+        {
+            transform.position = new Vector2(transform.position.x+ velocidade * Time.deltaTime, transform.position.y );
+            transform.localScale = _olharEsquerda;
+        }
+        
     }
 }

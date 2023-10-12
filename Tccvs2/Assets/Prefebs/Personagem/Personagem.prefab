@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 489453358602989050}
   - component: {fileID: 489453358602989051}
   - component: {fileID: 489453358602989053}
-  - component: {fileID: 489453358602989055}
-  - component: {fileID: 489453358602989025}
-  - component: {fileID: 489453358602989027}
   - component: {fileID: 489453358602989024}
   m_Layer: 10
   m_Name: Personagem
@@ -112,63 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &489453358602989055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489453358602989048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f138bee82e14ec4b945b6e2df84d8b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barra: {fileID: 0}
-  vida: 100
---- !u!114 &489453358602989025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489453358602989048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e96d81ebdd440641b211f5adcd805d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 10
-  forsaDoPulo: 16
-  detecarChao: {fileID: 489453358898212253}
-  oQueeChao:
-    serializedVersion: 2
-    m_Bits: 256
-  taNoChao: 0
-  ataqueChek: {fileID: 489453359388001060}
-  raioDeAtque: 0.2
-  inimigo:
-    serializedVersion: 2
-    m_Bits: 64
-  tempoDeRecargar: 2
---- !u!114 &489453358602989027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489453358602989048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370ba790380e72849920c8afd3331dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  ataquePonto: {fileID: 489453359388001060}
-  ataqueRange: 0.5
-  inimigoLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!61 &489453358602989024
 BoxCollider2D:
   m_ObjectHideFlags: 0
