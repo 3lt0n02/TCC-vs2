@@ -17,8 +17,8 @@ public class gamemanager : MonoBehaviour
                 _instance = FindObjectOfType<gamemanager>();
                 if (_instance == null)
                 {
-                    GameObject gamemanager = Instantiate (Resources.Load<GameObject>("gamemanager"));
-                    _instance = gamemanager.GetComponent<gamemanager>();
+                    GameObject gamemanageroGameObject = Instantiate (Resources.Load<GameObject>("gamemanager"));
+                    _instance = gamemanageroGameObject.GetComponent<gamemanager>();
                 }
 
             }
@@ -44,7 +44,22 @@ public class gamemanager : MonoBehaviour
     public void DarPlayNoJogo()
     {
         SceneManager.LoadScene("Interface");
-        SceneManager.LoadScene("Tutorial", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Tutorial 3.0", LoadSceneMode.Additive);
+    }
+
+    public void FimDoTurorial()
+    {
+        SceneManager.LoadScene("MenuInicial");
+    }
+
+    public void BotaoDePauser()
+    {
+        SceneManager.LoadScene("TelaDePauser", LoadSceneMode.Additive);
+    }
+
+    public void BotaoDeSaida()
+    {
+        SceneManager.UnloadSceneAsync("TelaDePauser");
     }
 
     

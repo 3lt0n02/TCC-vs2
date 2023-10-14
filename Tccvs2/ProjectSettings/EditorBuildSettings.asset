@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/cenas/Interface.unity
     guid: ae82e00e65feede458ba82e1a38a8524
   - enabled: 1
-    path: Assets/cenas/Tutorial.unity
+    path: Assets/cenas/Tutorial 3.0.unity
+    guid: 276641b8517d0c8469e95626bd2f92e9
+  - enabled: 1
+    path: Assets/cenas/TelaDePauser.unity
     guid: 628f305fa6fbb6041bfb1701bea30d25
   m_configObjects: {}

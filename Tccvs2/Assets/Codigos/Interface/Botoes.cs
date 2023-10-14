@@ -12,18 +12,7 @@ public class Botoes : MonoBehaviour
     {
         BotaoPLay.onClick.AddListener(BotaoPlayClicado);
     }
-
-    void Start()
-    {
-        
-    }
-
     
-    void Update()
-    {
-        
-    }
-
     private void BotaoPlayClicado()
     {
         gamemanager.instace.DarPlayNoJogo();
