@@ -18,16 +18,6 @@ public class MovimentarPersonagem : MonoBehaviour
     public bool taNoChao;
     [SerializeField] private Animator _animator;
 
-    [Header("Variaves de Ataque")] 
-    public Transform ataqueChek;
-    public float raioDeAtque;
-    public LayerMask inimigo;
-    public float tempoDeRecargar;
-    
-    
-    
-   
-
     private void Start()
     {
         _olhaDireta = transform.localScale;
@@ -37,11 +27,17 @@ public class MovimentarPersonagem : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
     }
 
+    private void FixedUpdate()
+    {
+        taNoChao = Physics2D.OverlapCircle(detecarChao.position, 0.2f, oQueeChao);
+    }
+
     private void Update()
     {
         Movimento();
         Pulo();
-        taNoChao = Physics2D.OverlapCircle(detecarChao.position, 0.4f, oQueeChao );
+        ataque();
+        
     }
 
     void Movimento()
@@ -73,5 +69,9 @@ public class MovimentarPersonagem : MonoBehaviour
             _animator.SetBool("pulando", false);
         }
     }
-    
+
+    void ataque()
+    {
+
+    }
 }

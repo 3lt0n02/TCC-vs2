@@ -43,7 +43,7 @@ public class gamemanager : MonoBehaviour
 
     public void DarPlayNoJogo()
     {
-        SceneManager.LoadScene("Interface");
+        SceneManager.LoadScene("HUD");
         SceneManager.LoadScene("Tutorial 3.0", LoadSceneMode.Additive);
     }
 
