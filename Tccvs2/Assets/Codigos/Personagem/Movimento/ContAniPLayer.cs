@@ -11,9 +11,7 @@ public class ContAniPLayer : MonoBehaviour
    
     void Update()
     {
-        if (this.player.taNoChao)
-        {
-            float velocidadex = Mathf.Abs(this._rigidbody2D.velocity.x);
+        float velocidadex = Mathf.Abs(this._rigidbody2D.velocity.x);
             if (velocidadex > 0)
             {
                 this._animator.SetBool("andando", true);
@@ -23,22 +21,8 @@ public class ContAniPLayer : MonoBehaviour
                 this._animator.SetBool("andando", false);
             }
             
-        }
-        else
-        {
-            float velocidadey = this._rigidbody2D.velocity.y;
-            if (velocidadey > 0 ) // ta pulando
-            {
-                this._animator.SetBool("pulando", true);
-            }
-            else
-            {
-                {
-                    this._animator.SetBool("pulando", false);
-                }
-            }
-        }
+    }
         
 
-    }
 }
+

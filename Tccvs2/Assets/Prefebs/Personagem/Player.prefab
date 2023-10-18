@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7184909865452370472}
   - component: {fileID: 7184909865452370479}
   - component: {fileID: 7184909865452370476}
-  - component: {fileID: 7184909865452370477}
   - component: {fileID: 7184909865452370474}
   - component: {fileID: 7184909865452370475}
   - component: {fileID: 1707384716533008177}
@@ -152,24 +151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barra: {fileID: 0}
   vida: 100
---- !u!114 &7184909865452370477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7184909865452370487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370ba790380e72849920c8afd3331dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  ataquePonto: {fileID: 0}
-  ataqueRange: 0.5
-  inimigoLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &7184909865452370474
 Rigidbody2D:
   serializedVersion: 4
@@ -256,7 +237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7184909866373886707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.39, y: -6.92, z: 0}
+  m_LocalPosition: {x: -2.64, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

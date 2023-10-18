@@ -12,11 +12,11 @@ public class MovimentarPersonagem : MonoBehaviour
     private Vector3 _olhaEsquerda;
     
     [Header("Variaves do Pulo")]
-    private int puloExtra = 1;
     public float forsaDoPulo;
     public Transform detecarChao;
     public LayerMask oQueeChao;
     public bool taNoChao;
+    [SerializeField] private Animator _animator;
 
     [Header("Variaves de Ataque")] 
     public Transform ataqueChek;
@@ -41,9 +41,7 @@ public class MovimentarPersonagem : MonoBehaviour
     {
         Movimento();
         Pulo();
-        flip();
-        playerAtaque();
-        taNoChao = Physics2D.OverlapCircle(detecarChao.position, 0.2f, oQueeChao );
+        taNoChao = Physics2D.OverlapCircle(detecarChao.position, 0.4f, oQueeChao );
     }
 
     void Movimento()
@@ -62,40 +60,18 @@ public class MovimentarPersonagem : MonoBehaviour
         }
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Chão"))
-        {
-            taNoChao = true;
-        }
-    }
     void Pulo()
     {
         if (Input.GetButtonDown("Jump") && taNoChao == true)
         {
             rb2D.velocity = Vector2.up * forsaDoPulo;
+            _animator.SetBool("pulando", true);
         }
 
-        if (Input.GetButtonDown("Jump") && taNoChao == false && puloExtra > 0)
+        if (taNoChao && rb2D.velocity.y == 0)
         {
-            rb2D.velocity = Vector2.up * forsaDoPulo;
-            puloExtra--;
-        }
-
-        if (taNoChao)
-        {
-            puloExtra = 1;
+            _animator.SetBool("pulando", false);
         }
     }
-
-    void flip()
-    {
-        ataqueChek.localPosition = new Vector2(-ataqueChek.localPosition.x, ataqueChek.localPosition.y);
-    }
-
-    void playerAtaque()
-    {
-        Collider2D[] inimigosAtaque = Physics2D.OverlapCircleAll(ataqueChek.position, raioDeAtque, inimigo);
-        
-    }
+    
 }
