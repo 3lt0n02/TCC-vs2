@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073222996163132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 0.6692, z: 20}
-  m_LocalScale: {x: 1, y: 0.8735, z: 1}
+  m_LocalPosition: {x: -0.0355, y: 0.45, z: 20}
+  m_LocalScale: {x: 1.1293713, y: 1.225655, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8678796155080428224}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 89a9933f40220b14db2937e08b6b5e47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -141,16 +141,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 10, z: -10}
+  m_TrackedObjectOffset: {x: 0, y: 9, z: -10}
   m_LookaheadTime: 0.4
   m_LookaheadSmoothing: 0.4
-  m_LookaheadIgnoreY: 1
+  m_LookaheadIgnoreY: 0
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 0
-  m_ScreenX: 0.51251745
-  m_ScreenY: 0.5060017
+  m_ScreenX: 0.44641566
+  m_ScreenY: 0.5090138
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.16881354
   m_DeadZoneHeight: 0.3122263
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8678796155080428092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.8, y: -30.533293, z: -10}
+  m_LocalPosition: {x: -17.673878, y: -27.885958, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -236,7 +236,7 @@ Camera:
   far clip plane: 100
   field of view: 34
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 17.45
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -378,11 +378,11 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 7184909865452370473, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 12
+    OrthographicSize: 17.45
     NearClipPlane: 0.3
     FarClipPlane: 100
     Dutch: 0
