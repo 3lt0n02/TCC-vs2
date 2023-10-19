@@ -42,6 +42,7 @@ public class MovimentarPersonagem : MonoBehaviour
 
     void Movimento()
     {
+        
         diresao = Input.GetAxis("Horizontal");
         rb2D.velocity = new Vector2(diresao * velocidade, rb2D.velocity.y);
 
@@ -54,19 +55,31 @@ public class MovimentarPersonagem : MonoBehaviour
         {
             transform.localScale = _olhaEsquerda;
         }
+
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            _animator.SetBool("andando", true);
+        }
+        else
+        {
+            _animator.SetBool("andando", false);
+        }
     }
     
     void Pulo()
     {
-        if (Input.GetButtonDown("Jump") && taNoChao == true)
+        if (Input.GetButtonDown("Jump") && taNoChao)
         {
             rb2D.velocity = Vector2.up * forsaDoPulo;
-            _animator.SetBool("pulando", true);
         }
 
-        if (taNoChao && rb2D.velocity.y == 0)
+        if (taNoChao)
         {
             _animator.SetBool("pulando", false);
+        }
+        else
+        {
+            _animator.SetBool("pulando", true);
         }
     }
 

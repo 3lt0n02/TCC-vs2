@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4175478282648872630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.96, y: -36.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.548, y: 1.548, z: 1.548}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d8d134305421f4ab66769af5228901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 1
-  pontoA: {fileID: 2566046700053529928, guid: dc5711c4868204d48812fa921e2457bf, type: 3}
-  pontoB: {fileID: 3071181289533344315, guid: 3e0bd0cc6085aee49905443df1ed0a7c, type: 3}
+  velocidade: 5
+  pontoA: {fileID: 0}
+  pontoB: {fileID: 0}
 --- !u!114 &4175478282648872620
 MonoBehaviour:
   m_ObjectHideFlags: 0

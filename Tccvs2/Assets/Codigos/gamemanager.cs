@@ -47,5 +47,10 @@ public class gamemanager : MonoBehaviour
         SceneManager.LoadScene("Tutorial 3.0", LoadSceneMode.Additive);
     }
 
-    
+    public void FinalizarFase()
+    {
+        SceneManager.LoadScene("MenuInicial");
+    }
+
+
 }
