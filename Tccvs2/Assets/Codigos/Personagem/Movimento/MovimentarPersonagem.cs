@@ -1,29 +1,31 @@
-using System;
-using Cinemachine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
+using System;
+
 
 public class MovimentarPersonagem : MonoBehaviour
 {
-    [Header("Variaves de Movemento ")]
-    public float velocidade; 
+    [Header("Variaves de Movemento ")] public float velocidade;
     private Rigidbody2D rb2D;
     private float diresao;
     private Vector3 _olhaDireta;
     private Vector3 _olhaEsquerda;
-    
-    [Header("Variaves do Pulo")]
-    public float forsaDoPulo;
+
+    [Header("Variaves do Pulo")] public float forsaDoPulo;
     public Transform detecarChao;
     public LayerMask oQueeChao;
     public bool taNoChao;
     [SerializeField] private Animator _animator;
+    private bool _TaAtacando;
 
     private void Start()
     {
         _olhaDireta = transform.localScale;
         _olhaEsquerda = transform.localScale;
         _olhaEsquerda.x = _olhaEsquerda.x * -1;
-        
+
         rb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -34,15 +36,20 @@ public class MovimentarPersonagem : MonoBehaviour
 
     private void Update()
     {
+        
+        if (_TaAtacando)
+        {
+            _animator.SetBool("atacando", true);
+        }
         Movimento();
         Pulo();
         ataque();
-        
+
     }
 
     void Movimento()
     {
-        
+
         diresao = Input.GetAxis("Horizontal");
         rb2D.velocity = new Vector2(diresao * velocidade, rb2D.velocity.y);
 
@@ -56,7 +63,7 @@ public class MovimentarPersonagem : MonoBehaviour
             transform.localScale = _olhaEsquerda;
         }
 
-        if (Input.GetAxis("Horizontal") != 0)
+        if (Input.GetAxis("Horizontal") != 0 )
         {
             _animator.SetBool("andando", true);
         }
@@ -65,7 +72,7 @@ public class MovimentarPersonagem : MonoBehaviour
             _animator.SetBool("andando", false);
         }
     }
-    
+
     void Pulo()
     {
         if (Input.GetButtonDown("Jump") && taNoChao)
@@ -85,6 +92,14 @@ public class MovimentarPersonagem : MonoBehaviour
 
     void ataque()
     {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            _TaAtacando = true;
+        }
+    }
 
+    public void finaldoataque()
+    {
+        _TaAtacando = false;
     }
 }
