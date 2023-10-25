@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4175478282648872624}
   - component: {fileID: 4175478282648872625}
   - component: {fileID: 4175478282648872620}
+  - component: {fileID: 4604485194195373448}
   m_Layer: 6
   m_Name: mini_goblin
   m_TagString: Inimigo
@@ -122,7 +123,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.39186764, y: -0.023300052}
+  m_Offset: {x: 0.39186764, y: -0.0063640475}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -133,7 +134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1536083, y: 1.1700666}
+  m_Size: {x: 1.1536083, y: 1.1361946}
   m_EdgeRadius: 0
 --- !u!114 &4175478282648872625
 MonoBehaviour:
@@ -162,3 +163,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4604485194195373448
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175478282648872630}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0938f805b2ce2342852e3d20f338c69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
