@@ -6,6 +6,7 @@ public class ControleDeAtaque : MonoBehaviour
     private bool atacando = false;
     private float duracaoAtaque = 0.6f;
     private float tempoDecorrido;
+    public MovimentarPersonagem movimentarPersonagem;
 
     void Start()
     {
@@ -14,7 +15,7 @@ public class ControleDeAtaque : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !atacando)
+        if (Input.GetKeyDown(KeyCode.W) && !atacando )
         {
             AtivarAtaque();
         }

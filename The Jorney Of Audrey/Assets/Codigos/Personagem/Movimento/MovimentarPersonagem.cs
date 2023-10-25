@@ -1,31 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
-using System;
-
 
 public class MovimentarPersonagem : MonoBehaviour
 {
-    [Header("Variaves de Movemento ")] public float velocidade;
+    [Header("Variaves de Movemento ")]
+    public float velocidade;
     private Rigidbody2D rb2D;
     private float diresao;
     private Vector3 _olhaDireta;
     private Vector3 _olhaEsquerda;
 
-    [Header("Variaves do Pulo")] public float forsaDoPulo;
+    [Header("Variaves do Pulo")]
+    public float forsaDoPulo;
     public Transform detecarChao;
     public LayerMask oQueeChao;
     public bool taNoChao;
     [SerializeField] private Animator _animator;
+
+    private Animator anim;
+    private bool atacando = false;
+    private float duracaoAtaque = 0.6f;
+    private float tempoDecorrido;
 
     private void Start()
     {
         _olhaDireta = transform.localScale;
         _olhaEsquerda = transform.localScale;
         _olhaEsquerda.x = _olhaEsquerda.x * -1;
-
         rb2D = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -35,14 +39,13 @@ public class MovimentarPersonagem : MonoBehaviour
 
     private void Update()
     {
-        
         Movimento();
         Pulo();
+        ControleDeAtaque();
     }
 
     void Movimento()
     {
-
         diresao = Input.GetAxis("Horizontal");
         rb2D.velocity = new Vector2(diresao * velocidade, rb2D.velocity.y);
 
@@ -50,20 +53,12 @@ public class MovimentarPersonagem : MonoBehaviour
         {
             transform.localScale = _olhaDireta;
         }
-
-        if (diresao < 0)
+        else if (diresao < 0)
         {
             transform.localScale = _olhaEsquerda;
         }
 
-        if (Input.GetAxis("Horizontal") != 0 )
-        {
-            _animator.SetBool("andando", true);
-        }
-        else
-        {
-            _animator.SetBool("andando", false);
-        }
+        _animator.SetBool("andando", Mathf.Abs(diresao) > 0);
     }
 
     void Pulo()
@@ -73,14 +68,34 @@ public class MovimentarPersonagem : MonoBehaviour
             rb2D.velocity = Vector2.up * forsaDoPulo;
         }
 
-        if (taNoChao)
+        _animator.SetBool("pulando", !taNoChao);
+    }
+
+    void ControleDeAtaque()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && !atacando)
         {
-            _animator.SetBool("pulando", false);
+            AtivarAtaque();
         }
-        else
+
+        tempoDecorrido += Time.deltaTime;
+
+        if (atacando && tempoDecorrido >= duracaoAtaque)
         {
-            _animator.SetBool("pulando", true);
+            DesativarAtaque();
         }
     }
-    
+
+    void AtivarAtaque()
+    {
+        atacando = true;
+        _animator.SetBool("Ataque", true);
+        tempoDecorrido = 0f;
+    }
+
+    void DesativarAtaque()
+    {
+        atacando = false;
+        _animator.SetBool("Ataque", false);
+    }
 }
