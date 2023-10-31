@@ -44,7 +44,7 @@ public class gamemanager : MonoBehaviour
     public void DarPlayNoJogo()
     {
         SceneManager.LoadScene("HUD");
-        SceneManager.LoadScene("Fase1", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Fase1", LoadSceneMode.Additive);
     }
 
     public void FinalizarFase()
@@ -55,7 +55,16 @@ public class gamemanager : MonoBehaviour
     public void Tutorial()
     {
         SceneManager.LoadScene("HUD");
-        SceneManager.LoadScene("Tutorial 3.0", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Tutorial 3.0", LoadSceneMode.Additive);
+    }
+    public void CarregarFase(string nomeDaFase)
+    {
+        SceneManager.LoadScene("HUD");
+        SceneManager.LoadSceneAsync(nomeDaFase, LoadSceneMode.Additive);
+    }
+    public void Fases()
+    {
+        SceneManager.LoadScene("Fases");
     }
 
 
