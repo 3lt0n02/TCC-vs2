@@ -3,7 +3,14 @@ using UnityEngine;
 
 public class SujeitoDeVida : MonoBehaviour
 {
-    private int vida = 100; // A quantidade inicial de vida do jogador.
+    public int vida = 100; // A quantidade inicial de vida do jogador.
+    public int VidaMaxima = 100;
+
+
+    private void Start()
+    {
+        VidaMaxima = vida;
+    }
 
     public event Action<int> MudancaNaVida; // Evento para notificar mudanças na vida.
 

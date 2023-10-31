@@ -67,5 +67,10 @@ public class gamemanager : MonoBehaviour
         SceneManager.LoadScene("Fases");
     }
 
+    public void GameOver()
+    {
+        SceneManager.LoadScene("MenuInicial");
+    }
+
 
 }

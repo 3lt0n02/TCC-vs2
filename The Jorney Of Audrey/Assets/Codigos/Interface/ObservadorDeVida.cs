@@ -3,22 +3,31 @@ using UnityEngine.UI;
 
 public class ObservadorDeVida : MonoBehaviour
 {
-    public Slider barraDeVida; // Referência à barra de vida na interface.
+    public SujeitoDeVida objetoComSujeitoDeVida;
+    public Slider barraDeVidaSlider;// Arraste o objeto com SujeitoDeVida aqui no Inspector.
 
     private void Start()
     {
-        barraDeVida.value = 100;
-        // Encontre o SujeitoDeVida na cena e inscreva-se no evento MudancaNaVida.
-        SujeitoDeVida sujeitoDeVida = FindObjectOfType<SujeitoDeVida>();
-        if (sujeitoDeVida != null)
+        // Certifique-se de que temos uma referência ao objeto com SujeitoDeVida.
+        if (objetoComSujeitoDeVida == null)
         {
-            sujeitoDeVida.MudancaNaVida += AtualizarBarraDeVida;
+            objetoComSujeitoDeVida = FindObjectOfType<SujeitoDeVida>(); // Use FindObjectOfType para encontrar o objeto.
         }
+
+        // Registre um método para ser chamado quando a vida mudar.
+        objetoComSujeitoDeVida.MudancaNaVida += AtualizarBarraDeVida;
     }
 
     private void AtualizarBarraDeVida(int novaVida)
     {
-        // Atualize a barra de vida com o novo valor de vida.
-        barraDeVida.value = novaVida;
+        Debug.Log("Está funcionando");
+        
+        barraDeVidaSlider.value = novaVida;
+        
+        // quando a vida for menor que zero abra a tela de GameOver
+        if (novaVida <= 0)
+        {
+            gamemanager.instace.GameOver();
+        }
     }
 }
