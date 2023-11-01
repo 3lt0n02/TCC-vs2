@@ -17,6 +17,8 @@ TagManager:
   - Cura
   - Elementos Da floresta
   - Plataforma
+  - Ground
+  - Dano
   layers:
   - Default
   - TransparentFX
