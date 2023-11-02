@@ -43,30 +43,44 @@ public class gamemanager : MonoBehaviour
 
     public void DarPlayNoJogo()
     {
-        SceneManager.LoadSceneAsync("Fase1", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Fase1");
     }
 
     public void FinalizarFase()
     {
         SceneManager.LoadScene("MenuInicial");
     }
-
+    public void CarregarFaseMorreu()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString("faseMorreu","MenuInicial"));
+    }
+    
     public void Tutorial()
     {
-        SceneManager.LoadSceneAsync("Tutorial 3.0", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Tutorial 3.0");
     }
     public void CarregarFase(string nomeDaFase)
     {
-        SceneManager.LoadSceneAsync(nomeDaFase, LoadSceneMode.Additive);
+        SceneManager.LoadScene(nomeDaFase);
     }
     public void Fases()
     {
         SceneManager.LoadScene("Fases");
     }
+    public void RecarregarCenaAnterior()
+    {
+        // Obtenha o índice da cena atual.
+        int indiceCenaAtual = SceneManager.GetActiveScene().buildIndex;
+
+        // Carregue a cena anterior (subtraindo 1 do índice da cena atual).
+        int indiceCenaAnterior = Mathf.Max(0, indiceCenaAtual - 1); // Certifique-se de que o índice seja no mínimo 0.
+
+        SceneManager.LoadScene(indiceCenaAnterior);
+    }
 
     public void GameOver()
     {
-        SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene("GameOver");
     }
 
 

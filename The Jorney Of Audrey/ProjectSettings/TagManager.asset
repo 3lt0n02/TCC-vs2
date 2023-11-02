@@ -7,18 +7,11 @@ TagManager:
   - "Ch\xE3o"
   - Grond
   - Botao
-  - plataforma
-  - Parar
-  - ObjetoPai
   - Inimigo
-  - Movel
-  - Gatilho
-  - Stop
-  - Cura
-  - Elementos Da floresta
   - Plataforma
   - Ground
   - Dano
+  - Platform
   layers:
   - Default
   - TransparentFX

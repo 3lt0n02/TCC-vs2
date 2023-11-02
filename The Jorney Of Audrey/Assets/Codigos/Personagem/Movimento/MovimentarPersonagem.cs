@@ -17,6 +17,10 @@ public class MovimentarPersonagem : MonoBehaviour
     public LayerMask oQueeChao;
     public bool taNoChao;
     [SerializeField] private Animator _animator;
+    
+    [Header("Mecanicas")]
+    public Transform plataforma;
+
 
     private Animator anim;
     private bool atacando = false;
@@ -98,4 +102,20 @@ public class MovimentarPersonagem : MonoBehaviour
         atacando = false;
         _animator.SetBool("Ataque", false);
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            if (plataforma != null)
+            {
+                Vector3 novaPosicao = transform.position; // Mantenha a posição atual do personagem.
+                novaPosicao.x = plataforma.position.x; // Igualar a posição X do personagem à posição X da plataforma.
+                transform.position = novaPosicao; // Aplicar a nova posição ao personagem.
+            }
+
+        }
+    }
+   
+
+
 }
