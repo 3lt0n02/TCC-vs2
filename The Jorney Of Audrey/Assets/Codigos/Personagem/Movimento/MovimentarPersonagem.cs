@@ -19,7 +19,9 @@ public class MovimentarPersonagem : MonoBehaviour
     [SerializeField] private Animator _animator;
     
     [Header("Mecanicas")]
-    public Transform plataforma;
+    //public Transform plataforma;
+
+    //public Transform plataformaVert;
 
 
     private Animator anim;
@@ -102,7 +104,7 @@ public class MovimentarPersonagem : MonoBehaviour
         atacando = false;
         _animator.SetBool("Ataque", false);
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Platform"))
         {
@@ -112,10 +114,11 @@ public class MovimentarPersonagem : MonoBehaviour
                 novaPosicao.x = plataforma.position.x; // Igualar a posição X do personagem à posição X da plataforma.
                 transform.position = novaPosicao; // Aplicar a nova posição ao personagem.
             }
+            
 
         }
     }
-   
+   */
 
 
 }

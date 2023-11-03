@@ -163,7 +163,6 @@ MonoBehaviour:
     m_Bits: 256
   taNoChao: 0
   _animator: {fileID: 591323159424673426}
-  plataforma: {fileID: 0}
 --- !u!50 &591323159424673422
 Rigidbody2D:
   serializedVersion: 4
