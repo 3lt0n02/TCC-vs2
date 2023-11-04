@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 10
-  forsaDoPulo: 14
+  forsaDoPulo: 15
   detecarChao: {fileID: 591323158265249386}
   oQueeChao:
     serializedVersion: 2

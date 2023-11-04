@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/cenas/Tutorial 3.0.unity
     guid: 276641b8517d0c8469e95626bd2f92e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/cenas/Fase1.unity
     guid: 69337cce6f5a1464bb6619332e7f480c
   - enabled: 1

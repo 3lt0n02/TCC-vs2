@@ -31,76 +31,13 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables:
-    - {fileID: 2800000, guid: b52460b8b3b0eb84eb614eea5c4a8031, type: 3}
-    - {fileID: 2800000, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-    - {fileID: 2800000, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-    - {fileID: 2800000, guid: 6a029cba50511d1418ea6747bd1df97a, type: 3}
-    - {fileID: 2800000, guid: e57dca3d722f3c342a08acc8865ac5f0, type: 3}
+    packables: []
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites:
-  - {fileID: -786785288, guid: b52460b8b3b0eb84eb614eea5c4a8031, type: 3}
-  - {fileID: -1869327258, guid: b52460b8b3b0eb84eb614eea5c4a8031, type: 3}
-  - {fileID: 1713527767, guid: b52460b8b3b0eb84eb614eea5c4a8031, type: 3}
-  - {fileID: 2037597629, guid: b52460b8b3b0eb84eb614eea5c4a8031, type: 3}
-  - {fileID: 261834083, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: 47061501, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: -966521612, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: 252459580, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: 1211450292, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: 1326286664, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: 1897444149, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: 675429787, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: -1664150333, guid: 1bc047f83e537144abc03af3a44e122e, type: 3}
-  - {fileID: -1751340815, guid: 6a029cba50511d1418ea6747bd1df97a, type: 3}
-  - {fileID: 459547132, guid: 6a029cba50511d1418ea6747bd1df97a, type: 3}
-  - {fileID: 2021607851, guid: 6a029cba50511d1418ea6747bd1df97a, type: 3}
-  - {fileID: -1851228289, guid: 6a029cba50511d1418ea6747bd1df97a, type: 3}
-  - {fileID: -1776248980, guid: e57dca3d722f3c342a08acc8865ac5f0, type: 3}
-  - {fileID: -1578166533, guid: e57dca3d722f3c342a08acc8865ac5f0, type: 3}
-  - {fileID: -109493839, guid: e57dca3d722f3c342a08acc8865ac5f0, type: 3}
-  - {fileID: -808434071, guid: e57dca3d722f3c342a08acc8865ac5f0, type: 3}
-  - {fileID: -1927219254, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: -478636237, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: 1123279747, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: 200736496, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: 987851473, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: -1685943978, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: 1539325532, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  - {fileID: 964523215, guid: fc5b91ce172aa41479ae43dfc5469420, type: 3}
-  m_PackedSpriteNamesToIndex:
-  - 05_3
-  - 05_2
-  - 05_1
-  - 05_0
-  - Chao_Claro_n_2
-  - Chao_Claro_n_3
-  - Chao_Claro_n_0
-  - Chao_Claro_n_1
-  - Chao_Claro_n_6
-  - Chao_Claro_n_7
-  - Chao_Claro_n_4
-  - Chao_Claro_n_5
-  - Chao_Claro_n_8
-  - Chao_Claro_n_Losangolo_1
-  - Chao_Claro_n_Losangolo_0
-  - Chao_Claro_n_Losangolo_3
-  - Chao_Claro_n_Losangolo_2
-  - Chao_Claro_n_Losangolo_semgrama_3
-  - Chao_Claro_n_Losangolo_semgrama_2
-  - Chao_Claro_n_Losangolo_semgrama_1
-  - Chao_Claro_n_Losangolo_semgrama_0
-  - Chao_Claro_n_Dentro_5
-  - Chao_Claro_n_Dentro_4
-  - Chao_Claro_n_Dentro_7
-  - Chao_Claro_n_Dentro_6
-  - Chao_Claro_n_Dentro_1
-  - Chao_Claro_n_Dentro_0
-  - Chao_Claro_n_Dentro_3
-  - Chao_Claro_n_Dentro_2
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
   m_RenderDataMap: {}
   m_Tag: Atlas
   m_IsVariant: 0
