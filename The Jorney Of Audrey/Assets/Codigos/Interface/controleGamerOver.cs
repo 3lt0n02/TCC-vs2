@@ -7,6 +7,7 @@ namespace Codigos.Interface
         public GameObject gameOverPanel; // Renomeado para gameOverPanel
         private bool isGameOver = false;
 
+        
         void Start()
         {
             gameOverPanel.SetActive(false); // Desative o painel de game over no início.

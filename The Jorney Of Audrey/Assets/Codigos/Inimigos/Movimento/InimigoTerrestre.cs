@@ -16,6 +16,8 @@ public class InimigoTerrestre : MonoBehaviour
     public Transform pontoA;
     public Transform pontoB;
 
+    
+
     void Start()
     {
         _olharDireita = transform.localScale;
