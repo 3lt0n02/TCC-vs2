@@ -156,13 +156,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 10
-  forsaDoPulo: 15
-  detecarChao: {fileID: 591323158265249386}
-  oQueeChao:
+  forcaDoPulo: 0
+  detectorDeChao: {fileID: 0}
+  oQueEhChao:
     serializedVersion: 2
-    m_Bits: 256
-  taNoChao: 0
+    m_Bits: 0
+  estaNoChao: 0
   _animator: {fileID: 591323159424673426}
+  pontoDeAtaque: {fileID: 0}
+  alcanceDeAtaque: 0.5
+  inimigos:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &591323159424673422
 Rigidbody2D:
   serializedVersion: 4
