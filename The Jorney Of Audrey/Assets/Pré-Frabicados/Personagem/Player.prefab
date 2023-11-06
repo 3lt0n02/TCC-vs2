@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 591323159424673417}
   - component: {fileID: 591323159424673422}
   - component: {fileID: 591323159424673423}
-  - component: {fileID: 5034214084035457307}
   - component: {fileID: 6604729728535742842}
   m_Layer: 0
   m_Name: Player
@@ -156,18 +155,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 10
-  forcaDoPulo: 0
-  detectorDeChao: {fileID: 0}
+  forcaDoPulo: 20
+  detectorDeChao: {fileID: 591323158265249386}
   oQueEhChao:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   estaNoChao: 0
   _animator: {fileID: 591323159424673426}
-  pontoDeAtaque: {fileID: 0}
+  pontoDeAtaque: {fileID: 591323159855824120}
   alcanceDeAtaque: 0.5
-  inimigos:
+  _Os_inimigos:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  danoDoPlayer: 100
 --- !u!50 &591323159424673422
 Rigidbody2D:
   serializedVersion: 4
@@ -215,19 +215,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8894844, y: 3.1551018}
   m_EdgeRadius: 0
---- !u!114 &5034214084035457307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591323159424673427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71bcc282f9cc654daf8c3011db3a159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movimentarPersonagem: {fileID: 0}
 --- !u!114 &6604729728535742842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +241,7 @@ GameObject:
   m_Layer: 0
   m_Name: Detec_Atack
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -266,7 +253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591323159855824121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.726, y: 1.704, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

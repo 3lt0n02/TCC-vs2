@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 314054326806044910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: In_Galinha
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6756731456524424752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ponto de Disparo
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -78,7 +78,9 @@ GameObject:
   - component: {fileID: 6754520298696437095}
   - component: {fileID: 8133273124198412007}
   - component: {fileID: 2895257415624012715}
-  m_Layer: 0
+  - component: {fileID: 1488376603}
+  - component: {fileID: 3453352117470594321}
+  m_Layer: 6
   m_Name: Galinha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,6 +207,45 @@ MonoBehaviour:
   tempoMaximo: 4
   ani: {fileID: 6754520298696437095}
   pontoDeInstancia: {fileID: 6756731456524424752}
+--- !u!114 &1488376603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754520298696437088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 100
+--- !u!61 &3453352117470594321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754520298696437088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.37}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.94, y: 0.74}
+    newSize: {x: 0.94, y: 0.74}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94, y: 0.74}
+  m_EdgeRadius: 0
 --- !u!1 &8133273125773506728
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8133273125773506729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pt A
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -245,7 +286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8133273125827887338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pt B
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}

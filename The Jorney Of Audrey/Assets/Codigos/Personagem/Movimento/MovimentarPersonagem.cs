@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,15 +17,16 @@ public class MovimentarPersonagem : MonoBehaviour
     public Transform detectorDeChao;
     public LayerMask oQueEhChao;
     public bool estaNoChao;
-    [SerializeField] private Animator _animator;
+    [SerializeField]private Animator _animator;
 
     [Header("Variáveis de Ataque")] 
     public Transform pontoDeAtaque;
     public float alcanceDeAtaque = 0.5f;
-    public LayerMask inimigos;
+    public LayerMask _Os_inimigos;
     private bool atacando = false;
     private float duracaoDoAtaque = 0.6f;
     private float tempoDecorrido;
+    public int danoDoPlayer = 100;
 
     private void Start()
     {
@@ -41,6 +43,7 @@ public class MovimentarPersonagem : MonoBehaviour
 
     private void Update()
     {
+       
         Movimento();
         Pulo();
         ControleDeAtaque();
@@ -88,11 +91,19 @@ public class MovimentarPersonagem : MonoBehaviour
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     void AtivarAtaque()
     {
         atacando = true;
         _animator.SetBool("Ataque", true);
         tempoDecorrido = 0f;
+        Collider2D[] inimigos = Physics2D.OverlapCircleAll(pontoDeAtaque.position, alcanceDeAtaque, _Os_inimigos);
+
+        // Aplica dano aos inimigos.
+        foreach (Collider2D inimigo in inimigos)
+        {
+            inimigo.GetComponent<MoteDoInimigo>().DanoNoImigo(danoDoPlayer);
+        }
     }
 
     void DesativarAtaque()
@@ -101,8 +112,9 @@ public class MovimentarPersonagem : MonoBehaviour
         _animator.SetBool("Ataque", false);
     }
 
-    void Ataque()
+    // dezenhar os Alcance do Ataque
+    private void OnDrawGizmosSelected()
     {
-        _animator.SetTrigger("Ataque0");
+        Gizmos.DrawWireSphere(pontoDeAtaque.position, alcanceDeAtaque);
     }
 }

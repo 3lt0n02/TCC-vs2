@@ -15,10 +15,7 @@ public class InimigoTerrestre : MonoBehaviour
     
     public Transform pontoA;
     public Transform pontoB;
-
-    public float vida;
     
-
     void Start()
     {
         _olharDireita = transform.localScale;
@@ -50,14 +47,5 @@ public class InimigoTerrestre : MonoBehaviour
         }
         
     }
-
-    void DanoNoInimigo(int dano)
-    {
-        vida -= dano;
-        if (vida <= 0)
-        {
-            Debug.Log("Recebeu o dano ");
-            Destroy(this.gameObject);
-        }
-    }
+    
 }

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3696907779614807437}
   - component: {fileID: 3696907779614807436}
   - component: {fileID: 3696907779614807439}
-  m_Layer: 0
+  - component: {fileID: 7251321276024767389}
+  m_Layer: 6
   m_Name: in_Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,6 +125,19 @@ MonoBehaviour:
   tempoMaximo: 3
   ani: {fileID: 3696907779614807436}
   pontoDeInstancia: {fileID: 3696907779634861368}
+--- !u!114 &7251321276024767389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696907779614807435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 100
 --- !u!1 &3696907779634861351
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3696907779634861368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Disparo
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}

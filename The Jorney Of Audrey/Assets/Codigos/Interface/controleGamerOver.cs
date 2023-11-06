@@ -11,6 +11,7 @@ namespace Codigos.Interface
         void Start()
         {
             gameOverPanel.SetActive(false); // Desative o painel de game over no início.
+            isGameOver = false;
         }
 
         public void AtivarGameOver()

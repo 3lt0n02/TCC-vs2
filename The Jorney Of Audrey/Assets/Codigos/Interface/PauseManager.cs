@@ -6,11 +6,12 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject pausePanel;
      
-         private bool isPaused = false;
+         private bool isPaused;
      
          void Start()
          {
              pausePanel.SetActive(false);
+             isPaused = false;
          }
          
          public void PauseGame()

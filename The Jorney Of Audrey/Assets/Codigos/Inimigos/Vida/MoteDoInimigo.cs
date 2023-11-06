@@ -4,19 +4,7 @@ using UnityEngine;
 
 public class MoteDoInimigo : MonoBehaviour
 {
-    private float vidaAtual = 100;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public float vidaAtual = 100;
     public void DanoNoImigo(int dano)
     {
         vidaAtual -= dano;
