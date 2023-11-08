@@ -8,7 +8,7 @@ public class ButtonFases : MonoBehaviour
 {
     [SerializeField] private Button _button;
 
-    private void Awake()
+    private void Start()
     {
         _button.onClick.AddListener(Fases);
     }

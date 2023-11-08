@@ -35,11 +35,7 @@ public class gamemanager : MonoBehaviour
     {
         SceneManager.LoadScene("MenuInicial");
     }
-
     
-    void Update()
-    {
-    }
 
     public void DarPlayNoJogo()
     {
@@ -48,7 +44,7 @@ public class gamemanager : MonoBehaviour
 
     public void FinalizarFase()
     {
-        SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene("Win");
     }
     public void CarregarFaseMorreu()
     {
@@ -73,7 +69,7 @@ public class gamemanager : MonoBehaviour
         int indiceCenaAtual = SceneManager.GetActiveScene().buildIndex;
 
         // Carregue a cena anterior (subtraindo 1 do índice da cena atual).
-        int indiceCenaAnterior = Mathf.Max(0, indiceCenaAtual - 1); // Certifique-se de que o índice seja no mínimo 0.
+        int indiceCenaAnterior = Mathf.Max(0, indiceCenaAtual - 1); 
 
         SceneManager.LoadScene(indiceCenaAnterior);
     }
@@ -81,6 +77,11 @@ public class gamemanager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MenuInicial");
     }
 
 

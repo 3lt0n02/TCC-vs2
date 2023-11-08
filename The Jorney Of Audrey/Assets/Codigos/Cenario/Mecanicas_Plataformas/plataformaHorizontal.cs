@@ -16,8 +16,7 @@ public class plataformaHorizontal : MonoBehaviour
 
     void Update()
     {
-        transform.localScale = new Vector3(1, 1, 1);
-       
+
         if (transform.position.x > pontoA.position.x)
         {
             moverParaEsquerda = true;

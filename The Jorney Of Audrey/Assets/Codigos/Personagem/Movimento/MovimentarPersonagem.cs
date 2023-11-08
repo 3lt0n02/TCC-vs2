@@ -35,15 +35,10 @@ public class MovimentarPersonagem : MonoBehaviour
         olharEsquerda.x = olharEsquerda.x * -1;
         rb2D = GetComponent<Rigidbody2D>();
     }
-
-    private void FixedUpdate()
-    {
-        estaNoChao = Physics2D.OverlapCircle(detectorDeChao.position, 0.2f, oQueEhChao);
-    }
-
+    
     private void Update()
     {
-       
+        estaNoChao = Physics2D.OverlapCircle(detectorDeChao.position, 0.2f, oQueEhChao);
         Movimento();
         Pulo();
         ControleDeAtaque();
@@ -52,6 +47,7 @@ public class MovimentarPersonagem : MonoBehaviour
     void Movimento()
     {
         direcao = Input.GetAxis("Horizontal");
+        // Multiplique a velocidade pela variável Time.deltaTime.
         rb2D.velocity = new Vector2(direcao * velocidade, rb2D.velocity.y);
 
         if (direcao > 0)

@@ -11,7 +11,7 @@ namespace Codigos.Interface
         }
         public void Menu()
         {
-            gamemanager.instace.FinalizarFase();
+            gamemanager.instace.Menu();
         }
     }
 }
