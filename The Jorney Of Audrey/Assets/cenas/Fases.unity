@@ -369,9 +369,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 398561807}
         m_TargetAssemblyTypeName: Botoes, Assembly-CSharp
-        m_MethodName: Fase1
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -433,6 +433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "_Bot\xE3o": {fileID: 398561804}
   fases:
+  - nomeDaFase: Fase 1
+    numeroDaFase: 1
   - nomeDaFase: Fase1
     numeroDaFase: 5
 --- !u!1 &455820702

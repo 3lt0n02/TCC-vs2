@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/cenas/Win.unity
     guid: 480974e64caac104a9ff28240c1efa48
+  - enabled: 1
+    path: Assets/cenas/Fase 1.unity
+    guid: cd4ba094e448e4d4ba60e837a2cc8da2
   m_configObjects: {}
