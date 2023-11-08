@@ -41996,6 +41996,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 591323158265249386, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.011
+      objectReference: {fileID: 0}
     - target: {fileID: 591323159424673420, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -42039,6 +42043,46 @@ PrefabInstance:
     - target: {fileID: 591323159424673420, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673421, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68b1377b638ae2b4eb595ba00581bf27, type: 3}
+    - target: {fileID: 591323159424673421, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2634125
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_Size.y
+      value: 3.8641825
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.031837463
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.9894662
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.2578512
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.01094489
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 591323159424673423, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.546875
       objectReference: {fileID: 0}
     - target: {fileID: 591323159424673427, guid: ae514d563c3a05d44bf9f3381c6dc298, type: 3}
       propertyPath: m_Name
