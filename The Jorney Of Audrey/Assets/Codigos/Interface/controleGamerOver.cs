@@ -1,31 +1,35 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Codigos.Interface
 {
     public class ControleGamerOver : MonoBehaviour
     {
         public GameObject gameOverPanel; // Renomeado para gameOverPanel
-        private bool isGameOver = false;
 
-        
+        [field: FormerlySerializedAs("_isGameOver")]
+        [field: SerializeField]
+        public bool IsGameOver { get; private set; } = false;
+
+
         void Start()
         {
             gameOverPanel.SetActive(false); // Desative o painel de game over no início.
-            isGameOver = false;
+            IsGameOver = false;
         }
 
         public void AtivarGameOver()
         {
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
-            isGameOver = true;
+            IsGameOver = true;
         }
 
         public void ResumeGame()
         {
             Time.timeScale = 1;
             gameOverPanel.SetActive(false);
-            isGameOver = false;
+            IsGameOver = false;
         }
 
     }
