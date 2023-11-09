@@ -1,51 +1,58 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ControleDeVida : MonoBehaviour
 {
-    public Slider barraDeVida; // Arraste o Slider da barra de vida aqui na Inspector.
+    public Slider barraDeVida;
     public int vidaMaxima = 100;
     private float vidaAtual;
+    public SpriteRenderer spriteRenderer;
 
     private void Start()
     {
-        // Inicialize a vida atual com o valor máximo.
         vidaAtual = vidaMaxima;
         AtualizarBarraDeVida();
     }
 
     private void Update()
     {
-       Morreu();
+        Morreu();
     }
 
     public void ReceberDano(float dano)
     {
-        // Reduza a vida com base no dano recebido.
+        StartCoroutine(MudarCorTemporaria(Color.red, 0.5f)); // Mudança temporária para vermelho por 0.5 segundos
         vidaAtual -= dano;
-        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima); // Garanta que a vida não ultrapasse os limites.
-
-        // Atualize a barra de vida.
+        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
         AtualizarBarraDeVida();
+    }
+
+    private IEnumerator MudarCorTemporaria(Color novaCor, float duracao)
+    {
+        spriteRenderer.color = novaCor;
+        yield return new WaitForSeconds(duracao);
+        spriteRenderer.color = Color.white; // Retorna à cor original (branco no exemplo)
     }
 
     private void AtualizarBarraDeVida()
     {
-        // Atualize o valor do Slider com base na vida atual.
         barraDeVida.value = vidaAtual;
-
-        // Você pode adicionar mais lógica aqui, como exibir uma mensagem de "Game Over" se a vida chegar a 0.
+        VerificarFimDeVida();
     }
 
     private void Morreu()
     {
+        VerificarFimDeVida();
+    }
+
+    private void VerificarFimDeVida()
+    {
         if (vidaAtual <= 0)
         {
-            PlayerPrefs.SetString("faseMorreu",SceneManager.GetActiveScene().name);
-            gamemanager.instace.GameOver(); 
+            PlayerPrefs.SetString("faseMorreu", SceneManager.GetActiveScene().name);
+            gamemanager.instance.GameOver();
         }
-        
     }
 }

@@ -16,6 +16,6 @@ public class ButtonTutorial : MonoBehaviour
 
    private void Tutorial()
    {
-      gamemanager.instace.Tutorial();
+      gamemanager.instance.Tutorial();
    }
 }

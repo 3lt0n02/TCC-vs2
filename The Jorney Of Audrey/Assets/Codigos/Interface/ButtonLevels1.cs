@@ -31,6 +31,6 @@ public class ButtonLevels1 : MonoBehaviour
 
         // Aqui você pode escolher qual fase carregar com base na seleção no Inspector.
         int faseSelecionada = 0; // Esta é apenas uma escolha padrão.
-        gamemanager.instace.CarregarFase(fases[faseSelecionada].nomeDaFase);
+        gamemanager.instance.CarregarFase(fases[faseSelecionada].nomeDaFase);
     }
 }

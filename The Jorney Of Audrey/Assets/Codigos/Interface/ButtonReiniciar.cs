@@ -6,7 +6,7 @@ namespace Codigos.Interface
     {
         public void Reiniciar()
         {
-            gamemanager.instace.RecarregarCenaAnterior();
+            gamemanager.instance.RecarregarCenaAnterior();
         }
 
     }

@@ -8,7 +8,7 @@ public class gamemanager : MonoBehaviour
 {
     private static gamemanager _instance;
 
-    public static gamemanager instace
+    public static gamemanager instance
     {
         get
         {

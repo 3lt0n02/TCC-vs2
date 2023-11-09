@@ -15,6 +15,6 @@ public class ButtonFases : MonoBehaviour
 
     private void Fases()
     {
-        gamemanager.instace.Fases();
+        gamemanager.instance.Fases();
     }
 }

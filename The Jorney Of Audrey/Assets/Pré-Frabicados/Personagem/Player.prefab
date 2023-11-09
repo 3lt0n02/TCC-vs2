@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barraDeVida: {fileID: 0}
   vidaMaxima: 100
+  spriteRenderer: {fileID: 591323159424673421}
 --- !u!1 &591323159855824121
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,11 +7,11 @@ namespace Codigos.Interface
    
         public void Reiniciar()
         {
-            gamemanager.instace.CarregarFaseMorreu();
+            gamemanager.instance.CarregarFaseMorreu();
         }
         public void Menu()
         {
-            gamemanager.instace.Menu();
+            gamemanager.instance.Menu();
         }
     }
 }

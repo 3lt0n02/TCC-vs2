@@ -10,7 +10,7 @@ public class Fim_Da_FAse : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            gamemanager.instace.FinalizarFase();
+            gamemanager.instance.FinalizarFase();
         }
     }
 }

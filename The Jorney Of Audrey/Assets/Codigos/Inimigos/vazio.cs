@@ -11,7 +11,7 @@ public class vazio : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             PlayerPrefs.SetString("faseMorreu",SceneManager.GetActiveScene().name);
-            gamemanager.instace.GameOver();
+            gamemanager.instance.GameOver();
         }
             
     }
