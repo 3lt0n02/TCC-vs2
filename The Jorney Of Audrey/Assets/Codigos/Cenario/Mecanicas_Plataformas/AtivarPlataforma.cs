@@ -33,5 +33,6 @@ namespace Codigos.Cenario.Mecanicas_Plataformas
                 _estaPressionado = true;
             }
         }
+        
     }
 }

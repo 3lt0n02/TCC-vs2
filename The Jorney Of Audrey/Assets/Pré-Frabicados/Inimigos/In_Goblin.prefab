@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d8d134305421f4ab66769af5228901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
-  dano: 100
+  velocidade: 2
+  dano: 10
   anim: {fileID: 1582743430871691447}
   pontoA: {fileID: 4866132009372487248}
   pontoB: {fileID: 3407236384692164679}
