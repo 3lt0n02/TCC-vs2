@@ -6,6 +6,7 @@ namespace Codigos.Cenario.Mecanicas_Plataformas
     {
         [Header("Variáveis de Controle de Plataformas")]
         public GameObject plataforma;
+        public GameObject plataformaTranparente;
 
         private bool _estaPressionado;
         public Animator _animator;
@@ -13,6 +14,7 @@ namespace Codigos.Cenario.Mecanicas_Plataformas
         void Start()
         {
             plataforma.SetActive(false);
+            plataformaTranparente.SetActive(true);
             _estaPressionado = false;
         }
 
@@ -22,6 +24,7 @@ namespace Codigos.Cenario.Mecanicas_Plataformas
             {
                 _animator.SetBool("Ativado", true);
                 plataforma.SetActive(true);
+                plataformaTranparente.SetActive(false);
             }
             
         }
