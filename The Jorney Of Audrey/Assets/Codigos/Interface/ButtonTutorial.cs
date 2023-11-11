@@ -9,7 +9,7 @@ public class ButtonTutorial : MonoBehaviour
 {
    [SerializeField]private Button _button;
 
-   private void Awake()
+   private void Start()
    {
       _button.onClick.AddListener(Tutorial);
    }

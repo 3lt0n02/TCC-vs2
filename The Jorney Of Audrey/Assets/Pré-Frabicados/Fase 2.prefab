@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7115925124355402290}
   - component: {fileID: 7115925124355402255}
   - component: {fileID: 7115925124355402252}
+  - component: {fileID: 3941668368123913515}
   - component: {fileID: 7115925124355402253}
-  - component: {fileID: 7115925124355402254}
   m_Layer: 5
   m_Name: Fase 2
   m_TagString: Untagged
@@ -78,6 +78,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3941668368123913515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115925124355402291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c00f98e8596b4341b5154dbe7cb106c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 7115925124355402253}
 --- !u!114 &7115925124355402253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,17 +135,3 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7115925124355402254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7115925124355402291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22ab15fad19fd1e47bc2d1d2f53d8cc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "_Bot\xE3o": {fileID: 7115925124355402253}
-  fases: []
