@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 99.9
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1368,8 +1368,8 @@ TextureImporter:
       Tilemap_Mina_15: -1199874805
       Tilemap_Mina_20: 492328761
       Tilemap_Mina_72: 1929662850
-      Tilemap_Mina_18: -1582337919
       Tilemap_Mina_54: 978894680
+      Tilemap_Mina_18: -1582337919
       Tilemap_Mina_30: 1458511878
       Tilemap_Mina_148: 600375126
       Tilemap_Mina_45: -1945569064
