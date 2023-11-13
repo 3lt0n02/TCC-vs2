@@ -6,6 +6,7 @@ public class MovimentoEsquerda : MonoBehaviour
 
     private Rigidbody2D rb;
     public int dano = 20;
+    public float tempoDeVida = 5.0f;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class MovimentoEsquerda : MonoBehaviour
     {
         // Mover o objeto para a esquerda (velocidade negativa).
         rb.velocity = new Vector2(-velocidade, rb.velocity.y);
-        Destroy(gameObject, 5.0f);
+        Destroy(gameObject, tempoDeVida);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

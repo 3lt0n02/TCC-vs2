@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 1158632697469763181}
   - component: {fileID: 1158632697469763182}
   - component: {fileID: 1158632697469763178}
-  - component: {fileID: 1158632697469763177}
   - component: {fileID: 4857386423306379324}
+  - component: {fileID: 9210731109526531970}
   m_Layer: 8
   m_Name: PlataformaVert
   m_TagString: Platform
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026702642, y: 0.39414406}
+  m_Offset: {x: 0.026702642, y: 0.41500366}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -143,7 +143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.966993, y: 0.35059738}
+  m_Size: {x: 5.966993, y: 0.3773477}
   m_EdgeRadius: 0
 --- !u!50 &1158632697469763178
 Rigidbody2D:
@@ -166,21 +166,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1158632697469763177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158632697469763183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86687ea8f5478514b8ff74f7ca8894f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pontoA: {fileID: 1158632698555444669}
-  pontoB: {fileID: 1158632697175830884}
-  velocidade: 5
 --- !u!251 &4857386423306379324
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -200,6 +185,21 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &9210731109526531970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158632697469763183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8140dc1689f037d4bb393e5c00f0c6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoA: {fileID: 1158632698555444669}
+  pontoB: {fileID: 1158632697175830884}
+  velocidade: 5
 --- !u!1 &1158632698555444670
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7257525708635989254}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: In_Plat_Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}

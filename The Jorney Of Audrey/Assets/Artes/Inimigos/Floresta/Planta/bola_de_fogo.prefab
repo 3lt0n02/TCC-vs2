@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   dano: 20
+  tempoDeVida: 2.5
 --- !u!58 &2812553400238484339
 CircleCollider2D:
   m_ObjectHideFlags: 0
