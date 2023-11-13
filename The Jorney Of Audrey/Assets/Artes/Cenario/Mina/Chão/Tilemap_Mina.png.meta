@@ -1,0 +1,1450 @@
+fileFormatVersion: 2
+guid: cb7e64123ae59a04d8f2da0ae9ab07c8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tilemap_Mina_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba191b8633b46f043943dcf72c4e4707
+      internalID: -1726140495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a52e9c7c5b1dde4f997473ff483f7bc
+      internalID: -1582337919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbfb3e6c654b3048b68ad51e72b4a23
+      internalID: 140066644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dabdaf4b88bcf24d8cd5c65cd717605
+      internalID: 647081379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b701ebbcbf85748844a86eb768fead
+      internalID: 2045844976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815ee481dc07e464d86d8c78ca9c8707
+      internalID: 182692576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_25
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c4d7243d5c2ab4699d5ecc7d1dd582
+      internalID: -1296050273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2925
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32509205718707a47b0ab1687f7cb7d2
+      internalID: 1816089100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_39
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38acf0bc1edeb847ad14b0201392567
+      internalID: 310046910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c00286e992ffa042a88ae8e5a50a6c3
+      internalID: 57737936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c8867a5c2e384468a40959e34609b6
+      internalID: 1675128830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c08105b005ad2946892da106f7418c3
+      internalID: 421798771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe72485061773de428c81c92134cf08d
+      internalID: -1964394202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_45
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64705687b193e73478b7577964e5b34b
+      internalID: -1945569064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_55
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f9e0ead820eaf4884f2d6ae7898d0c
+      internalID: -269169466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_56
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eeb34d2b1878b4895bcbb2e224ff02
+      internalID: -2141361382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_57
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a8a671481a9c748995a1428a2ec80d
+      internalID: 1964319509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_59
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3496a9e513cd5540a1ca6218a30d238
+      internalID: -744964828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_60
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d87dfdd80844f47857cda4e3cfb425
+      internalID: 2106142014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_61
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe380ec4c683c54eb078a06c818aa0b
+      internalID: -758089520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_63
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e6b4b4b8423f9409fe461637b24ff6
+      internalID: -679465306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_65
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deee11134c85a774badaf6bd397bc463
+      internalID: -387771831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1bf14b56142394190df75ca388a2b4
+      internalID: -1154816553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_86
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572422a40f2b82547b79bd2d4c49e38f
+      internalID: 54233782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_87
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7160d3053621c41b47c1c03b2e4459
+      internalID: -1785147168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_89
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc90d7f682125440acdd00cfd2ecdd4
+      internalID: -1854639856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_90
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15aa1be6d7adef04db5d182fd6751791
+      internalID: 1120804052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_91
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13853fa0ffbb5ac4c892a5b779ff799f
+      internalID: 26971401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_92
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38208f20cfa62fa43960addc3c03354e
+      internalID: 1962791519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_94
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928f0bd0c9d20c2439754dba9cf99f0c
+      internalID: -1332020761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_95
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cfb767f60b89d4ea917f2e594de8fd
+      internalID: -124581548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_96
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f3ac9f37903994e88d822998e3d16d
+      internalID: 537747536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_98
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f50ccef3e8d8af46bdba5d18d49e672
+      internalID: 1252075309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_99
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ca83893659e85478d38deb0f64cb7f
+      internalID: 918673043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_100
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa588cda852efd14684a71a6faa5e9dc
+      internalID: -2138568949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_101
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652512eeac8f3b5459eaa2a7d588182e
+      internalID: -1389230080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_103
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f472658a753104f9dc7419042eba40
+      internalID: -967529205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_104
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da8add5745537d49921c320d2c140dd
+      internalID: -991973428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_105
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952a0a80244ac594aadedb843b763ac0
+      internalID: 931512014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_107
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6702288a289e1e489b72c346894563d
+      internalID: -1833292042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_108
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40993ba68d06ee4bb440702d4df50a2
+      internalID: 61712501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_109
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea9c13cc8b47584392063a6517b4b05
+      internalID: 5552447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_110
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2325
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62147d4546e302e4495bfeba92fc5175
+      internalID: -870395465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_120
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2125
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ed1d1613cd8b14da4711a63c673c0b
+      internalID: -1104470532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_121
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2125
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863d85cd8ed7ca5489c1df30c4a8d613
+      internalID: 1901663252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_124
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2025
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54f089db0ef1714a8760bd3b54cdbfa
+      internalID: 1901006097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_125
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2025
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f91cb972348ed4daa6cbaf96fa1082
+      internalID: 1206623443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_129
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bb46e0deacfef4ea435a084197bc79
+      internalID: -1968042467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_130
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1825
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b625b38b85fa0469381e157a25bcd6
+      internalID: -729772305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_133
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd590f9d0f354e4691c243bd9e2f83d
+      internalID: -829088900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_134
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1725
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff789121b4ef8124bb56cf225603b336
+      internalID: 1028274402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_140
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1684ff6791a13ca4280dea70fbfe4519
+      internalID: -607033711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_141
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1525
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8288642f973609947afe7737adcf3d2a
+      internalID: -734741240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_144
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd89045ef7c25b4fa208a0e934497cb
+      internalID: -863173152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Mina_145
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1425
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b4a48847177045bbfd9eebc2a50f5
+      internalID: -404635572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tilemap_Mina_82: 304499917
+      Tilemap_Mina_116: 1811454919
+      Tilemap_Mina_88: 973826867
+      Tilemap_Mina_66: -764416481
+      Tilemap_Mina_50: -413576939
+      Tilemap_Mina_12: -1639530705
+      Tilemap_Mina_70: 2116605048
+      Tilemap_Mina_75: -966773073
+      Tilemap_Mina_144: -863173152
+      Tilemap_Mina_128: -1910095913
+      Tilemap_Mina_143: -1975241410
+      Tilemap_Mina_22: 2045844976
+      Tilemap_Mina_46: 1211253149
+      Tilemap_Mina_7: 831253839
+      Tilemap_Mina_14: -1267176931
+      Tilemap_Mina_55: -269169466
+      Tilemap_Mina_97: 534559405
+      Tilemap_Mina_41: 1675128830
+      Tilemap_Mina_118: -234480821
+      Tilemap_Mina_77: 1183438845
+      Tilemap_Mina_71: -2054834053
+      Tilemap_Mina_4: 306072639
+      Tilemap_Mina_89: -1854639856
+      Tilemap_Mina_96: 537747536
+      Tilemap_Mina_119: -973863439
+      Tilemap_Mina_127: 139087770
+      Tilemap_Mina_73: 1368019843
+      Tilemap_Mina_140: -607033711
+      Tilemap_Mina_138: -1615662613
+      Tilemap_Mina_147: 443276993
+      Tilemap_Mina_58: 1673428930
+      Tilemap_Mina_64: -802932452
+      Tilemap_Mina_136: -422499941
+      Tilemap_Mina_24: 1997716934
+      Tilemap_Mina_86: 54233782
+      Tilemap_Mina_69: -1510887133
+      Tilemap_Mina_3: 2005058795
+      Tilemap_Mina_37: 1234434274
+      Tilemap_Mina_141: -734741240
+      Tilemap_Mina_104: -991973428
+      Tilemap_Mina_142: -75000989
+      Tilemap_Mina_126: -1623303506
+      Tilemap_Mina_78: 549626446
+      Tilemap_Mina_61: -758089520
+      Tilemap_Mina_129: -1968042467
+      Tilemap_Mina_117: -594492831
+      Tilemap_Mina_145: -404635572
+      Tilemap_Mina_137: -1613450921
+      Tilemap_Mina_2: -2102097033
+      Tilemap_Mina_26: -1706211345
+      Tilemap_Mina_112: 534407094
+      Tilemap_Mina_1: -270681904
+      Tilemap_Mina_85: -1154816553
+      Tilemap_Mina_43: 421798771
+      Tilemap_Mina_99: 918673043
+      Tilemap_Mina_0: 330766996
+      Tilemap_Mina_94: -1332020761
+      Tilemap_Mina_132: -1168527232
+      Tilemap_Mina_48: -942783467
+      Tilemap_Mina_39: 310046910
+      Tilemap_Mina_53: 787507143
+      Tilemap_Mina_135: 1721049946
+      Tilemap_Mina_133: -829088900
+      Tilemap_Mina_98: 1252075309
+      Tilemap_Mina_8: -2087968535
+      Tilemap_Mina_105: 931512014
+      Tilemap_Mina_32: -677635720
+      Tilemap_Mina_114: 1739465275
+      Tilemap_Mina_42: 1318068587
+      Tilemap_Mina_130: -729772305
+      Tilemap_Mina_84: 635684874
+      Tilemap_Mina_33: 1711838679
+      Tilemap_Mina_15: -1199874805
+      Tilemap_Mina_20: 492328761
+      Tilemap_Mina_72: 1929662850
+      Tilemap_Mina_18: -1582337919
+      Tilemap_Mina_54: 978894680
+      Tilemap_Mina_30: 1458511878
+      Tilemap_Mina_148: 600375126
+      Tilemap_Mina_45: -1945569064
+      Tilemap_Mina_74: 389036322
+      Tilemap_Mina_134: 1028274402
+      Tilemap_Mina_121: 1901663252
+      Tilemap_Mina_57: 1964319509
+      Tilemap_Mina_67: -629342954
+      Tilemap_Mina_6: -1336434050
+      Tilemap_Mina_122: -1250973131
+      Tilemap_Mina_124: 1901006097
+      Tilemap_Mina_52: 773669159
+      Tilemap_Mina_95: -124581548
+      Tilemap_Mina_110: -870395465
+      Tilemap_Mina_87: -1785147168
+      Tilemap_Mina_93: -1858429436
+      Tilemap_Mina_109: 5552447
+      Tilemap_Mina_27: 1816089100
+      Tilemap_Mina_10: 1629344672
+      Tilemap_Mina_16: 178099771
+      Tilemap_Mina_38: -609084791
+      Tilemap_Mina_113: 1329134997
+      Tilemap_Mina_56: -2141361382
+      Tilemap_Mina_139: -863835799
+      Tilemap_Mina_51: -1682961033
+      Tilemap_Mina_62: -1947998766
+      Tilemap_Mina_23: 182692576
+      Tilemap_Mina_83: -2081640505
+      Tilemap_Mina_21: 647081379
+      Tilemap_Mina_17: -1726140495
+      Tilemap_Mina_68: 1033258135
+      Tilemap_Mina_63: -679465306
+      Tilemap_Mina_90: 1120804052
+      Tilemap_Mina_9: 938121989
+      Tilemap_Mina_101: -1389230080
+      Tilemap_Mina_13: -1950928248
+      Tilemap_Mina_34: 1348434441
+      Tilemap_Mina_100: -2138568949
+      Tilemap_Mina_5: 730316895
+      Tilemap_Mina_59: -744964828
+      Tilemap_Mina_36: -964935707
+      Tilemap_Mina_80: 1148543773
+      Tilemap_Mina_146: -199090788
+      Tilemap_Mina_123: 452047698
+      Tilemap_Mina_44: -1964394202
+      Tilemap_Mina_29: -956265309
+      Tilemap_Mina_106: 1449024380
+      Tilemap_Mina_103: -967529205
+      Tilemap_Mina_28: 1236721377
+      Tilemap_Mina_40: 57737936
+      Tilemap_Mina_65: -387771831
+      Tilemap_Mina_47: -230379310
+      Tilemap_Mina_107: -1833292042
+      Tilemap_Mina_115: 1801233897
+      Tilemap_Mina_125: 1206623443
+      Tilemap_Mina_81: 135916459
+      Tilemap_Mina_76: 1946045277
+      Tilemap_Mina_31: 1227825693
+      Tilemap_Mina_102: -875867416
+      Tilemap_Mina_25: -1296050273
+      Tilemap_Mina_131: 2081246406
+      Tilemap_Mina_108: 61712501
+      Tilemap_Mina_111: 1228301532
+      Tilemap_Mina_19: 140066644
+      Tilemap_Mina_91: 26971401
+      Tilemap_Mina_49: 196030045
+      Tilemap_Mina_120: -1104470532
+      Tilemap_Mina_11: 1788028028
+      Tilemap_Mina_92: 1962791519
+      Tilemap_Mina_79: -1354862543
+      Tilemap_Mina_60: 2106142014
+      Tilemap_Mina_35: 315133065
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
