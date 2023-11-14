@@ -28,6 +28,17 @@ public class MovimentarPersonagem : MonoBehaviour
     private float tempoDecorrido;
     public int danoDoPlayer = 100;
 
+    
+    [Header("Controle De Áudio")] 
+    public AudioSource audioSourceMovimento; // Adicione um AudioSource para os efeitos de movimento.
+    public AudioClip somMovimento; // Adicione o som de movimento.
+    
+    public AudioSource audioSourceJump;
+    public AudioClip somJump;
+
+    public AudioSource audioSourceAttack;
+    public AudioClip somAttack;
+
     private void Start()
     {
         olharDireita = transform.localScale;
@@ -47,8 +58,23 @@ public class MovimentarPersonagem : MonoBehaviour
     void Movimento()
     {
         direcao = Input.GetAxis("Horizontal");
-        // Multiplique a velocidade pela variável Time.deltaTime.
         rb2D.velocity = new Vector2(direcao * velocidade, rb2D.velocity.y);
+
+        if (direcao != 0 && estaNoChao)
+        {
+            _animator.SetBool("andando", true);
+            
+            if (!audioSourceMovimento.isPlaying)
+            {
+                audioSourceMovimento.clip = somMovimento;
+                audioSourceMovimento.Play();
+            }
+        }
+        else
+        {
+            audioSourceMovimento.Stop();
+            _animator.SetBool("andando", false);
+        }
 
         if (direcao > 0)
         {
@@ -58,18 +84,21 @@ public class MovimentarPersonagem : MonoBehaviour
         {
             transform.localScale = olharEsquerda;
         }
-
-        _animator.SetBool("andando", Mathf.Abs(direcao) > 0);
     }
+
+  
 
     void Pulo()
     {
         if (Input.GetButtonDown("Jump") && estaNoChao)
         {
             rb2D.velocity = Vector2.up * forcaDoPulo;
+            audioSourceJump.clip = somJump;
+            audioSourceJump.Play();
         }
 
         _animator.SetBool("pulando", !estaNoChao);
+        
     }
 
     void ControleDeAtaque()
@@ -77,6 +106,9 @@ public class MovimentarPersonagem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && !atacando)
         {
             AtivarAtaque();
+            audioSourceAttack.clip = somAttack;
+            audioSourceAttack.Play();
+            
         }
 
         tempoDecorrido += Time.deltaTime;
