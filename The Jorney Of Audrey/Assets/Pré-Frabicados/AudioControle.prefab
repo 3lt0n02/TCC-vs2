@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiosorcesMusicasDeFundo: {fileID: 5187343297059629529}
-  MusicasDefundo:
+  musicasDefundo:
   - {fileID: 8300000, guid: f554085b1284ae64d93c15c7a2193cff, type: 3}
+  _NumeroDAMusica: 0
 --- !u!82 &5187343297059629529
 AudioSource:
   m_ObjectHideFlags: 0
@@ -60,7 +61,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
