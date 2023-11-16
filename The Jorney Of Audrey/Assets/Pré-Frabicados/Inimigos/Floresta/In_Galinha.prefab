@@ -143,7 +143,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145751759
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f10cd35b92e03df4685111ba41fdcd18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -187,7 +187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d8d134305421f4ab66769af5228901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 2
+  velocidade: 5
+  dano: 0
+  anim: {fileID: 0}
   pontoA: {fileID: 8133273125773506729}
   pontoB: {fileID: 8133273125827887338}
 --- !u!114 &2895257415624012715
@@ -204,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoParaInstanciar: {fileID: 7454837843368112781, guid: 1ff6329bcb0d261439388be3594dc409, type: 3}
   tempoMinimo: 1
-  tempoMaximo: 4
+  tempoMaximo: 2
   ani: {fileID: 6754520298696437095}
   pontoDeInstancia: {fileID: 6756731456524424752}
 --- !u!114 &1488376603

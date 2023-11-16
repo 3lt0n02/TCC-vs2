@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovimentoDoTatu : MonoBehaviour
@@ -11,6 +13,8 @@ public class MovimentoDoTatu : MonoBehaviour
     private bool moverParaEsquerda = true;
     private Vector3 _olharDireita;
     private Vector3 _olharEsquerda;
+
+    public int dano = 15;
 
     void Start()
     {
@@ -58,5 +62,18 @@ public class MovimentoDoTatu : MonoBehaviour
     public void ResetarVelocidade()
     {
         velocidadeAtual = velocidadePadrao;
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Player"))
+        {
+            ControleDeVida controleDeVida = col.gameObject.GetComponent<ControleDeVida>();
+            
+            if (controleDeVida != null)
+            {
+                controleDeVida.ReceberDano(dano);
+            }
+        }
     }
 }

@@ -410,18 +410,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1582743430871691433, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 93.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582743430871691433, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3407236384692164679, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 91.95
-      objectReference: {fileID: 0}
     - target: {fileID: 3781015841333107097, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -465,10 +453,6 @@ PrefabInstance:
     - target: {fileID: 3781015841333107097, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866132009372487248, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 95.08
       objectReference: {fileID: 0}
     - target: {fileID: 8072570461571608527, guid: def34111bc59a7443b9932cbcf71b54f, type: 3}
       propertyPath: m_Name
@@ -2278,7 +2262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 146000669045971157, guid: 210ba812c7ea16946b09312f0732c764, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.94993
+      value: -40.94922
       objectReference: {fileID: 0}
     - target: {fileID: 146000669045971157, guid: 210ba812c7ea16946b09312f0732c764, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10038,17 +10022,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2895257415624012715, guid: dc2414e9e42e5ae47a86395096a701ad, type: 3}
-      propertyPath: tempoMaximo
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3490090003279390388, guid: dc2414e9e42e5ae47a86395096a701ad, type: 3}
       propertyPath: m_Name
       value: In_Galinha (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133273124198412007, guid: dc2414e9e42e5ae47a86395096a701ad, type: 3}
-      propertyPath: velocidade
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc2414e9e42e5ae47a86395096a701ad, type: 3}
@@ -136918,7 +136894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8678796155326867811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.94993, y: -31.80009, z: -20}
+  m_LocalPosition: {x: -40.94922, y: -31.80009, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

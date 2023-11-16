@@ -111,7 +111,8 @@ GameObject:
   - component: {fileID: 5900701300664586165}
   - component: {fileID: 5900701300664586164}
   - component: {fileID: 5900701300664586058}
-  m_Layer: 0
+  - component: {fileID: 5536258960889656043}
+  m_Layer: 6
   m_Name: Tatu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,6 +269,20 @@ MonoBehaviour:
   pontoB: {fileID: 5900701300475078366}
   velocidade: 2
   velocidadePadrao: 3
+  dano: 15
+--- !u!114 &5536258960889656043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900701300664586160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 100
 --- !u!1 &5900701300809767807
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +294,7 @@ GameObject:
   - component: {fileID: 5900701300809767804}
   - component: {fileID: 5900701300809767805}
   - component: {fileID: 5900701300809767794}
+  - component: {fileID: 3633610386388543197}
   m_Layer: 0
   m_Name: "Range_De_Vis\xE3o"
   m_TagString: Untagged
@@ -341,3 +357,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tatu: {fileID: 5900701300664586160}
   aumentoVelocidade: 5
+--- !u!114 &3633610386388543197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900701300809767807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 100
