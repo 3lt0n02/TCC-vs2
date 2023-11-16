@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Codigos.Inimigos.Movimento
@@ -13,6 +14,11 @@ namespace Codigos.Inimigos.Movimento
         public int dano = 10;
 
         public Animator ani;
+
+        private void Start()
+        {
+            ani.SetBool("Andando", true);
+        }
 
         private void Update()
         {
