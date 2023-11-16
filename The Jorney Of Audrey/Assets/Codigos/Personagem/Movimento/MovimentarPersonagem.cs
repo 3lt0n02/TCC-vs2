@@ -24,7 +24,7 @@ public class MovimentarPersonagem : MonoBehaviour
     public float alcanceDeAtaque = 0.5f;
     public LayerMask _Os_inimigos;
     private bool atacando = false;
-    private float duracaoDoAtaque = 0.6f;
+    private float duracaoDoAtaque = 0.16f;
     private float tempoDecorrido;
     public int danoDoPlayer = 100;
 

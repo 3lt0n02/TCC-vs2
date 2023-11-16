@@ -2278,7 +2278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 146000669045971157, guid: 210ba812c7ea16946b09312f0732c764, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.950207
+      value: -40.94993
       objectReference: {fileID: 0}
     - target: {fileID: 146000669045971157, guid: 210ba812c7ea16946b09312f0732c764, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10985,7 +10985,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145751759
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e0f0399b1db94f7468d097c14ca9532e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6039216}
   m_FlipX: 0
@@ -11069,7 +11069,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145751759
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e0f0399b1db94f7468d097c14ca9532e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6039216}
   m_FlipX: 0
@@ -134188,9 +134188,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -2145751759
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e0f0399b1db94f7468d097c14ca9532e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6039216}
   m_FlipX: 0
@@ -134274,7 +134274,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145751759
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e0f0399b1db94f7468d097c14ca9532e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6039216}
   m_FlipX: 0
@@ -134520,7 +134520,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145751759
   m_SortingLayer: 1
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 6.3311462, y: 9.329691, z: 0}
   m_MaxChunkCount: 16
@@ -136572,6 +136572,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -11.37
       objectReference: {fileID: 0}
+    - target: {fileID: 1158632697469763181, guid: 84a2294f9022d144bbb6bedb910c0c36, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1158632698555444669, guid: 84a2294f9022d144bbb6bedb910c0c36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.05
@@ -136914,7 +136918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8678796155326867811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.950207, y: -31.80009, z: -20}
+  m_LocalPosition: {x: -40.94993, y: -31.80009, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
