@@ -103,11 +103,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8015272555106001815}
   - component: {fileID: 8015272555106001814}
+  - component: {fileID: 1404006011895147151}
   - component: {fileID: 8015272555106001809}
   - component: {fileID: 8015272555106001813}
   - component: {fileID: 8015272555106001812}
   - component: {fileID: 1309179021192273094}
-  - component: {fileID: 1234002501}
   m_Layer: 6
   m_Name: "Orc_Chef\xE3o"
   m_TagString: Untagged
@@ -182,6 +182,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1404006011895147151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015272555106001808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7daf2ba562f4644c849b83c136764cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 100
+  barreira: {fileID: 4470880330979211845}
 --- !u!95 &8015272555106001809
 Animator:
   serializedVersion: 4
@@ -266,20 +280,6 @@ MonoBehaviour:
   velocidade: 2
   dano: 10
   ani: {fileID: 8015272555106001809}
---- !u!114 &1234002501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8015272555106001808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4d7f25174dfce4d8281d109ebd62b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaAtual: 1000
-  barreira: {fileID: 0}
 --- !u!1 &8015272555480855771
 GameObject:
   m_ObjectHideFlags: 0

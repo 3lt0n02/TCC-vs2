@@ -6,7 +6,6 @@ using UnityEngine;
 public class MoteDoInimigo : MonoBehaviour
 {
     public float vidaAtual = 100;
-    public GameObject barreira;
 
     public void DanoNoImigo(int dano)
     {
@@ -14,7 +13,6 @@ public class MoteDoInimigo : MonoBehaviour
         if (vidaAtual <= 0)
         {
             Destroy(this.gameObject);
-            barreira.SetActive(false);
         }
     }
 }

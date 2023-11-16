@@ -41,6 +41,7 @@ public class MovimentarPersonagem : MonoBehaviour
 
     private void Start()
     {
+        _animator.SetBool("Ataque", false);
         olharDireita = transform.localScale;
         olharEsquerda = transform.localScale;
         olharEsquerda.x = olharEsquerda.x * -1;
