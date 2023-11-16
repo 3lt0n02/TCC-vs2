@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AreaDeAtaque : MonoBehaviour
+public partial class AreaDeAtaque : MonoBehaviour
 {
     public GameObject tatu; // Referência ao GameObject do Tatu
     public float aumentoVelocidade = 5.0f; // Aumento de velocidade desejado

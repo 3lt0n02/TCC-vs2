@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Andado
+    m_ConditionEvent: Andando
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2278590987061695436}
@@ -61,7 +61,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Attack
+    m_ConditionEvent: Ataque
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2278590987061695436}
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Attack
+    m_ConditionEvent: Ataque
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5238464001360059984}
@@ -166,13 +166,13 @@ AnimatorController:
   m_Name: Controlle_Orc
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Attack
+  - m_Name: Ataque
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Andado
+  - m_Name: Andando
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -200,7 +200,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Andado
+    m_ConditionEvent: Andando
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8970789558945828545}
@@ -225,10 +225,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Attack
+    m_ConditionEvent: Ataque
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: Andado
+    m_ConditionEvent: Andando
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8970789558945828545}

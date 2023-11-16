@@ -45,6 +45,7 @@ public class MovimentarPersonagem : MonoBehaviour
         olharEsquerda = transform.localScale;
         olharEsquerda.x = olharEsquerda.x * -1;
         rb2D = GetComponent<Rigidbody2D>();
+        _animator.SetBool("atacando", false);
     }
     
     private void Update()
