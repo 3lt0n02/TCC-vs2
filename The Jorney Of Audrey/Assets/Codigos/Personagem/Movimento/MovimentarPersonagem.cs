@@ -27,11 +27,14 @@ public class MovimentarPersonagem : MonoBehaviour
     private float duracaoDoAtaque = 0.50f;
     private float tempoDecorrido;
     public int danoDoPlayer = 100;
+    private float danoPadrao = 100f;
+    private float danoAtual;
+   
 
     
     [Header("Controle De Áudio")] 
-    public AudioSource audioSourceMovimento; // Adicione um AudioSource para os efeitos de movimento.
-    public AudioClip somMovimento; // Adicione o som de movimento.
+    public AudioSource audioSourceMovimento; 
+    public AudioClip somMovimento;
     
     public AudioSource audioSourceJump;
     public AudioClip somJump;
@@ -41,6 +44,7 @@ public class MovimentarPersonagem : MonoBehaviour
 
     private void Start()
     {
+        danoAtual = danoPadrao;
         _animator.SetBool("Ataque", false);
         olharDireita = transform.localScale;
         olharEsquerda = transform.localScale;
@@ -86,8 +90,6 @@ public class MovimentarPersonagem : MonoBehaviour
             transform.localScale = olharEsquerda;
         }
     }
-
-  
 
     void Pulo()
     {
@@ -140,8 +142,20 @@ public class MovimentarPersonagem : MonoBehaviour
         atacando = false;
         _animator.SetBool("Ataque", false);
     }
-
-    // dezenhar os Alcance do Ataque
+    public void AumentarDano(float aumento)
+    {
+        float novoDano = danoAtual * aumento;
+        danoDoPlayer = (int)novoDano; 
+        StartCoroutine(ReverterAumentoDano());
+    }
+    // ReSharper disable Unity.PerformanceAnalysis
+    private IEnumerator ReverterAumentoDano()
+    {
+        yield return new WaitForSeconds(5f);  
+        
+        danoDoPlayer = (int)danoPadrao;
+    }
+    
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(pontoDeAtaque.position, alcanceDeAtaque);
