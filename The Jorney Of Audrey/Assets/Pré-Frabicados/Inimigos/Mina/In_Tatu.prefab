@@ -174,7 +174,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145751759
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c3c0e2905173dfc4ebab4084c6336c53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaAtual: 100
+  barreia: {fileID: 0}
 --- !u!1 &5900701300809767807
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,3 +371,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaAtual: 100
+  barreia: {fileID: 0}
