@@ -12,6 +12,7 @@ TagManager:
   - Ground
   - Dano
   - Platform
+  - Moeda
   layers:
   - Default
   - TransparentFX

@@ -1,10 +1,14 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using Codigos;
+using Codigos.Inimigos.Vida;
 using UnityEngine;
 
 public class MovimentarPersonagem : MonoBehaviour
 {
+    [Header("Moedas")] 
+    public PontuacaoHUD pontuacaoHUD;
+    public int valorDaMoeda = 1;
+    
     [Header("Variáveis de Movimento")] 
     public float velocidade;
     private Rigidbody2D rb2D;
@@ -41,6 +45,8 @@ public class MovimentarPersonagem : MonoBehaviour
 
     public AudioSource audioSourceAttack;
     public AudioClip somAttack;
+    
+    
 
     private void Start()
     {
@@ -160,4 +166,19 @@ public class MovimentarPersonagem : MonoBehaviour
     {
         Gizmos.DrawWireSphere(pontoDeAtaque.position, alcanceDeAtaque);
     }
+    
+    private void ColetarMoeda()
+    {
+        // Lógica de coleta de moeda aqui
+        int novaPontuacao = pontuacaoHUD.pontuacao + valorDaMoeda;  // Certifique-se de definir valorDaMoeda
+        pontuacaoHUD.AtualizarPontuacao(novaPontuacao);
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Moeda"))
+        {
+            ColetarMoeda();
+        }
+    }
+
 }

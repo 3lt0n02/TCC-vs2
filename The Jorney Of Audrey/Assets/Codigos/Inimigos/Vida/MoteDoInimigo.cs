@@ -1,18 +1,33 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MoteDoInimigo : MonoBehaviour
+namespace Codigos.Inimigos.Vida
 {
-    public float vidaAtual = 100;
-
-    public void DanoNoImigo(int dano)
+    public class MoteDoInimigo : MonoBehaviour
     {
-        vidaAtual -= dano;
-        if (vidaAtual <= 0)
+        public float vidaAtual = 100;
+        public GameObject barreia;
+        public bool temBarreira = false;
+        public void DanoNoImigo(int dano)
         {
-            Destroy(this.gameObject);
+            vidaAtual -= dano;
+            if (vidaAtual <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+
+        private void Update()
+        {
+            if (temBarreira)
+            {
+                if (barreia != null)
+                {
+                    if (vidaAtual <= 0)
+                    {
+                        barreia.SetActive(false);
+                    } 
+                }
+            }
         }
     }
 }
