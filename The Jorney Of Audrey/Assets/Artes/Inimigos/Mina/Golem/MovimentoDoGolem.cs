@@ -17,10 +17,12 @@ namespace Artes.Inimigos.Mina.Golem
         private Vector3 _olharDireita;
         private Vector3 _olharEsquerda;
 
+        public Animator ani;
+        public Transform ptDoDisparo;
+        public GameObject pedraPrefab;
+
         public Transform pontoA;
         public Transform pontoB;
-
-        public Animator ani;
 
         void Start()
         {
@@ -37,13 +39,16 @@ namespace Artes.Inimigos.Mina.Golem
                 {
                     MovimentoSuaveEntrePontos();
                     ani.SetBool("Atacando", false);
-                    _tempoDecorrido += Time.deltaTime; // Atualiza o tempo decorrido
+                    _tempoDecorrido += Time.deltaTime;
                 }
                 else
                 {
                     ani.SetBool("Atacando", true);
                     _parado = true;
                     _tempoParadaAtual = Random.Range(duracaoParadaMinima, duracaoParadaMaxima);
+
+                    // Inicia a repetição da instância de pedras a cada 1 segundo
+                    InvokeRepeating("InstanciarPedra", 0f, 1f);
                 }
             }
             else
@@ -51,13 +56,16 @@ namespace Artes.Inimigos.Mina.Golem
                 if (_tempoParadaAtual > 0f)
                 {
                     _tempoParadaAtual -= Time.deltaTime; // Atualiza o tempo de parada
-                    
                 }
                 else
                 {
+                    ani.SetBool("Atacando", false);
                     _parado = false;
                     _tempoDecorrido = 0f; // Reinicia o tempo decorrido para o próximo movimento
                     InverterDirecao();
+
+                    // Cancela a repetição da instância de pedras
+                    CancelInvoke("InstanciarPedra");
                 }
             }
         }
@@ -85,7 +93,20 @@ namespace Artes.Inimigos.Mina.Golem
                 _moverParaFrente = true;
             }
         }
+        
+        // ReSharper disable Unity.PerformanceAnalysis
+        void InstanciarPedra()
+        {
+            // Instancia a pedra na posição do ponto de disparo
+            GameObject pedraObj = Instantiate(pedraPrefab, ptDoDisparo.position, Quaternion.identity);
+            Pedra scriptPedra = pedraObj.GetComponent<Pedra>();
 
+            if (scriptPedra != null)
+            {
+                // Define a direção da pedra com base na direção do Golem
+                scriptPedra.DefinirDirecao(transform.localScale.x);
+            }
+        }
         void InverterDirecao()
         {
             _moverParaFrente = !_moverParaFrente;

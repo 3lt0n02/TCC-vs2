@@ -44,6 +44,10 @@ public class gamemanager : MonoBehaviour
 
     public void FinalizarFase1()
     {
+        SceneManager.LoadScene("TelaWinFase2");
+    }
+    public void FinalizarFase2()
+    {
         SceneManager.LoadScene("TelaWinFase1");
     }
     public void CarregarFaseMorreu()
