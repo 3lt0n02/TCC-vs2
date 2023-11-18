@@ -86,6 +86,10 @@ public class gamemanager : MonoBehaviour
     {
         SceneManager.LoadScene("Fase 3");
     }
+    public void shoope()
+    {
+        SceneManager.LoadScene("Shoope");
+    }
 
 
 }
