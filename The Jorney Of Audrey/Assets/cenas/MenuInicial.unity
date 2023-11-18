@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 1185725255}
   - component: {fileID: 1185725254}
   - component: {fileID: 1185725253}
-  - component: {fileID: 1185725252}
+  - component: {fileID: 1185725256}
   m_Layer: 5
   m_Name: Saida
   m_TagString: Untagged
@@ -1114,19 +1114,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -161.6}
   m_SizeDelta: {x: 212.11, y: 62.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1185725252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185725250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd881f19a954bad458de94c5e2df05f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _button: {fileID: 1185725253}
 --- !u!114 &1185725253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,9 +1158,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Botoes, Assembly-CSharp
-        m_MethodName: Fases
+      - m_Target: {fileID: 1185725256}
+        m_TargetAssemblyTypeName: Codigos.Interface.buttonSaida, Assembly-CSharp
+        m_MethodName: saida
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1221,6 +1208,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185725250}
   m_CullTransparentMesh: 1
+--- !u!114 &1185725256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185725250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49773767df06d874f8de61316af9ae66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519546259
 GameObject:
   m_ObjectHideFlags: 0

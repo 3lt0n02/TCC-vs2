@@ -90,6 +90,10 @@ public class gamemanager : MonoBehaviour
     {
         SceneManager.LoadScene("Shoope");
     }
+    public void saida()
+    {
+        Application.Quit();
+    }
 
 
 }
